@@ -1,0 +1,88 @@
+# Formulário "Recado" → arquivo do recado do dono do produto (ADR 0035 do aloirr/macuxifdv, T-0139).
+# Só vale para issue aberta pela conta domontecristo (AUTOR_PERMITIDO). O texto da issue nunca é interpolado no
+# shell: vai por variável de ambiente ou pelo arquivo do evento, lido pelo Node.
+name: recado pelo formulário
+
+on:
+  issues:
+    types: [opened]
+
+permissions: {}
+
+# Uma escrita no main por vez (o PC também empurra a cada 2 min; o push tem nova tentativa com rebase).
+concurrency:
+  group: escrita-no-main
+  cancel-in-progress: false
+
+env:
+  AUTOR_PERMITIDO: domontecristo
+
+jobs:
+  gravar:
+    if: github.event.issue.user.login == 'domontecristo'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: gerar o arquivo do recado
+        id: gerar
+        env:
+          FUSO: America/Boa_Vista
+        run: node .github/scripts/issue-recado.mjs "$GITHUB_EVENT_PATH"
+
+      - name: commit e push (com nova tentativa)
+        id: push
+        if: steps.gerar.outputs.ok == 'true'
+        env:
+          ID: ${{ steps.gerar.outputs.id }}
+          NUMERO: ${{ github.event.issue.number }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- recados
+          git commit -q -m "recados: $ID pela issue #$NUMERO"
+          for i in 1 2 3 4 5; do
+            if git push -q origin HEAD:main; then
+              echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            sleep $((i * 3))
+            git pull -q --rebase origin main
+          done
+          echo "::error::push recusado 5 vezes"
+          exit 1
+
+      - name: responder e fechar a issue
+        if: always() && steps.gerar.outcome == 'success' && steps.gerar.outputs.ok != 'ignorar'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          SERVIDOR: ${{ github.server_url }}
+          NUMERO: ${{ github.event.issue.number }}
+          OK: ${{ steps.gerar.outputs.ok }}
+          ERRO: ${{ steps.gerar.outputs.erro }}
+          ID: ${{ steps.gerar.outputs.id }}
+          ARQUIVO: ${{ steps.gerar.outputs.arquivo }}
+          SHA: ${{ steps.push.outputs.sha }}
+          PUSH: ${{ steps.push.outcome }}
+        run: |
+          if [ "$OK" = "true" ] && [ "$PUSH" = "success" ]; then
+            gh issue comment "$NUMERO" -R "$REPO" --body "Recado $ID gravado: $SERVIDOR/$REPO/blob/$SHA/$ARQUIVO"
+            gh issue close "$NUMERO" -R "$REPO" --reason completed
+          elif [ "$OK" = "true" ]; then
+            gh issue comment "$NUMERO" -R "$REPO" --body "Não consegui gravar o recado (push recusado). A issue fica aberta: feche e abra outra, ou avise o gerente."
+          else
+            printf 'O recado não foi gravado: %s\n\nAbra outra issue com o formulário corrigido.\n' "$ERRO" > corpo.txt
+            gh issue comment "$NUMERO" -R "$REPO" --body-file corpo.txt
+            gh issue close "$NUMERO" -R "$REPO" --reason "not planned"
+          fi

@@ -1,0 +1,123 @@
+name: Recado
+description: Recado do dono do produto para o time Macuxi. Vira um arquivo em recados/<destino>/ e a issue é fechada com o link.
+title: "[Recado] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        O **título** da issue é o assunto do recado. Só vale para issue aberta pela conta domontecristo; de outra conta, nada acontece.
+        Em até 3 min o recado chega à caixa do destino no PC (sincronização a cada 2 min).
+  - type: dropdown
+    id: para
+    attributes:
+      label: Para
+      multiple: true
+      options:
+        - gerente-projetos
+        - todos
+        - engenheiro-software
+        - engenheiro-apps
+        - designer-ux
+        - banco-dados
+        - testes
+        - modulo-core
+        - modulo-catalogo
+        - modulo-vendedor
+        - modulo-promotor
+        - modulo-gestor
+        - modulo-pesquisa
+        - modulo-treinamento
+        - modulo-integracao
+        - corretor-redundancias
+        - alexandre
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: cc
+    attributes:
+      label: Cópia (cc)
+      multiple: true
+      options:
+        - gerente-projetos
+        - todos
+        - engenheiro-software
+        - engenheiro-apps
+        - designer-ux
+        - banco-dados
+        - testes
+        - modulo-core
+        - modulo-catalogo
+        - modulo-vendedor
+        - modulo-promotor
+        - modulo-gestor
+        - modulo-pesquisa
+        - modulo-treinamento
+        - modulo-integracao
+        - corretor-redundancias
+    validations:
+      required: false
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - pedido
+        - aviso
+        - pergunta
+        - resposta
+        - bloqueio
+        - revisao
+        - entrega
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: Prioridade
+      options:
+        - normal
+        - alta
+        - baixa
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: tarefa
+    attributes:
+      label: Tarefa
+      description: Opcional. Formato T-0000.
+      placeholder: T-0139
+    validations:
+      required: false
+  - type: input
+    id: responde_a
+    attributes:
+      label: Responde a
+      description: Opcional. Id do recado que esta mensagem responde (R-AAAAMMDD-HHMMSS-remetente).
+      placeholder: R-20261108-132842-gerente-projetos
+    validations:
+      required: false
+  - type: checkboxes
+    id: encerra
+    attributes:
+      label: Encerra o assunto
+      description: Só numa resposta (preencha "Responde a").
+      options:
+        - label: Sim, este recado encerra o assunto
+          required: false
+  - type: textarea
+    id: texto
+    attributes:
+      label: Texto
+      description: O corpo do recado. Para pedido, use Contexto / O que preciso / Pronto quando.
+      placeholder: |
+        ## Contexto
+        ...
+        ## O que preciso
+        ...
+        ## Pronto quando
+        ...
+    validations:
+      required: true

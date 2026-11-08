@@ -1,0 +1,41 @@
+# Aviso no Telegram quando chega recado na caixa do dono do produto (ADR 0035 do aloirr/macuxifdv, T-0139).
+# Dispara no push ao main que mexe em recados/alexandre/ e manda o título e as primeiras linhas de cada recado NOVO.
+# Secrets: TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID (só nas variáveis do passo; o script os mascara com ::add-mask::).
+# Commits feitos pelo próprio Actions (GITHUB_TOKEN) não disparam este workflow.
+name: aviso no Telegram
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'recados/alexandre/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aviso-telegram
+  cancel-in-progress: false
+
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: avisar os recados novos
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTES: ${{ github.event.before }}
+          DEPOIS: ${{ github.sha }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: node .github/scripts/aviso-telegram.mjs

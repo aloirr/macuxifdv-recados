@@ -1,0 +1,57 @@
+# Resumo de hora em hora no Telegram (ADR 0035 do aloirr/macuxifdv, T-0139): recados novos em recados/todos/ e na
+# caixa do dono do produto desde o último envio. Sem novidade, não envia nada.
+# Marcador do último envio: SHA do último resumo, guardado no cache do Actions (não faz commit no repositório;
+# o cache usa o token do runner, sem permissão extra no GITHUB_TOKEN).
+# Se o cache expirar (7 dias sem uso), o resumo volta a olhar a última hora.
+# Secrets: TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID (mascarados pelo script).
+name: resumo de hora em hora
+
+on:
+  schedule:
+    - cron: '7 * * * *' # minuto 7 de cada hora (UTC); o GitHub pode atrasar alguns minutos
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: status-horario
+  cancel-in-progress: false
+
+jobs:
+  resumo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: marcador do último envio
+        uses: actions/cache/restore@v4
+        with:
+          path: .estado-status
+          key: status-horario-${{ github.run_id }}
+          restore-keys: status-horario-
+
+      - name: montar e enviar o resumo
+        id: resumo
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MARCADOR: .estado-status/ultimo-envio.txt
+          FUSO: America/Boa_Vista
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: node .github/scripts/status-horario.mjs
+
+      - name: guardar o marcador
+        if: steps.resumo.outputs.avancar == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .estado-status
+          key: status-horario-${{ github.run_id }}
