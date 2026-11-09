@@ -276,3 +276,4 @@ R-20261108-230930-gerente-projetos
 R-20261108-235610-banco-dados
 R-20261109-041423-gerente-projetos
 R-20261109-043936-engenheiro-apps
+R-20261109-132526-engenheiro-software
