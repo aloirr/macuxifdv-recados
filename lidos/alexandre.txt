@@ -267,3 +267,12 @@ R-20261107-191209-gerente-projetos
 R-20261107-191544-gerente-projetos
 R-20261107-203854-gerente-projetos
 R-20261107-213429-gerente-projetos
+R-20261107-224011-gerente-projetos
+R-20261107-232151-gerente-projetos
+R-20261108-054931-gerente-projetos
+R-20261108-181944-gerente-projetos
+R-20261108-203424-engenheiro-apps
+R-20261108-230930-gerente-projetos
+R-20261108-235610-banco-dados
+R-20261109-041423-gerente-projetos
+R-20261109-043936-engenheiro-apps
