@@ -271,3 +271,6 @@ R-20261108-234434-modulo-integracao
 R-20261108-234454-modulo-integracao
 R-20261109-004653-banco-dados
 R-20261109-023557-corretor-redundancias
+R-20261109-081901-engenheiro-apps
+R-20261109-113059-designer-ux
+R-20261109-121702-alexandre

@@ -16,3 +16,10 @@ R-20261108-211057-gerente-projetos
 R-20261109-023639-corretor-redundancias
 R-20261108-230152-banco-dados
 R-20261108-081926-testes
+R-20261109-054659-alexandre
+R-20261109-064818-alexandre
+R-20261109-095142-engenheiro-apps
+R-20261109-095608-engenheiro-software
+R-20261109-095722-engenheiro-software
+R-20261109-121700-alexandre
+R-20261109-142107-testes

@@ -156,3 +156,5 @@ R-20261108-232435-engenheiro-software
 R-20261109-010107-modulo-core
 R-20261108-235739-engenheiro-software
 R-20261109-023734-corretor-redundancias
+R-20261109-065241-alexandre
+R-20261109-065415-alexandre

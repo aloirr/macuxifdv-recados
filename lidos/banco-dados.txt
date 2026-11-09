@@ -191,3 +191,13 @@ R-20261109-010010-modulo-core
 R-20261109-004300-modulo-gestor
 R-20261109-014928-modulo-integracao
 R-20261109-021216-modulo-core
+R-20261109-044733-gerente-projetos
+R-20261109-050539-gerente-projetos
+R-20261109-053246-gerente-projetos
+R-20261109-053728-gerente-projetos
+R-20261109-073157-gerente-projetos
+R-20261109-081704-gerente-projetos
+R-20261109-094901-gerente-projetos
+R-20261109-120732-gerente-projetos
+R-20261109-130342-gerente-projetos
+R-20261109-140538-testes

@@ -20,3 +20,4 @@ R-20261101-015017-gerente-projetos
 R-20261101-234446-3-modulo-gestor
 R-20261101-234446-modulo-gestor
 R-20261101-235554-2-modulo-gestor
+R-20261109-023747-corretor-redundancias
