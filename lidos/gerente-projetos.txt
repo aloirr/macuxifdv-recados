@@ -578,3 +578,8 @@ R-20261110-145320-testes
 R-20261110-145346-testes
 R-20261110-145757-testes
 R-20261110-150142-modulo-catalogo
+R-20261110-151010-modulo-vendedor
+R-20261110-151324-corretor-redundancias
+R-20261110-151334-corretor-redundancias
+R-20261110-151346-corretor-redundancias
+R-20261110-151359-corretor-redundancias
