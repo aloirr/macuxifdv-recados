@@ -407,3 +407,5 @@ R-20261110-075059-corretor-redundancias
 R-20261110-075111-corretor-redundancias
 R-20261110-075122-corretor-redundancias
 R-20261110-075618-corretor-redundancias
+R-20261110-080117-corretor-redundancias
+R-20261110-080835-modulo-integracao
