@@ -202,3 +202,10 @@ R-20261109-120732-gerente-projetos
 R-20261109-130342-gerente-projetos
 R-20261109-140538-testes
 R-20261110-060422-modulo-vendedor
+R-20261109-121700-alexandre
+R-20261109-121701-alexandre
+R-20261109-125750-alexandre
+R-20261109-150720-testes
+R-20261109-193950-gerente-projetos
+R-20261109-202200-alexandre
+R-20261110-061853-gerente-projetos
