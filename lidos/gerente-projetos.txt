@@ -514,3 +514,6 @@ R-20261110-115605-engenheiro-apps
 R-20261110-115831-modulo-vendedor
 R-20261110-115839-modulo-vendedor
 R-20261110-115947-engenheiro-software
+R-20261110-120046-banco-dados
+R-20261110-120213-testes
+R-20261110-120225-testes
