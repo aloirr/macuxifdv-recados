@@ -614,3 +614,5 @@ R-20261110-183742-engenheiro-apps
 R-20261110-192152-alexandre
 R-20261110-192153-alexandre
 R-20261110-192154-alexandre
+R-20261110-185438-modulo-vendedor
+R-20261110-185446-designer-ux
