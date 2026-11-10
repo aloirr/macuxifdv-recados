@@ -266,3 +266,4 @@ R-20261110-091646-gerente-projetos
 R-20261110-091959-gerente-projetos
 R-20261110-092027-engenheiro-software
 R-20261110-072444-engenheiro-software
+R-20261110-085824-corretor-redundancias
