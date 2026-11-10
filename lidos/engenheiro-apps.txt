@@ -260,3 +260,9 @@ R-20261109-153855-engenheiro-software
 R-20261109-133337-modulo-core
 R-20261109-125750-alexandre
 R-20261109-193950-gerente-projetos
+R-20261110-091537-alexandre
+R-20261110-093125-alexandre
+R-20261110-091646-gerente-projetos
+R-20261110-091959-gerente-projetos
+R-20261110-092027-engenheiro-software
+R-20261110-072444-engenheiro-software
