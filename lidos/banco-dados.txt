@@ -213,3 +213,4 @@ R-20261110-071153-modulo-vendedor
 R-20261110-062234-alexandre
 R-20261110-084206-gerente-projetos
 R-20261110-084730-testes
+R-20261110-085846-corretor-redundancias
