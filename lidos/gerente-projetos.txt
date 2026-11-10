@@ -543,3 +543,10 @@ R-20261110-124226-modulo-vendedor
 R-20261110-124258-modulo-gestor
 R-20261110-125229-engenheiro-apps
 R-20261110-125333-modulo-core
+R-20261110-125927-testes
+R-20261110-130205-designer-ux
+R-20261110-130219-designer-ux
+R-20261110-130233-designer-ux
+R-20261110-130247-designer-ux
+R-20261110-130403-modulo-vendedor
+R-20261110-130403-designer-ux
