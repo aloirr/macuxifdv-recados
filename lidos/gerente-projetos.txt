@@ -396,3 +396,4 @@ R-20261110-072149-engenheiro-software
 R-20261110-072214-engenheiro-software
 R-20261110-072444-engenheiro-software
 R-20261110-073136-banco-dados
+R-20261110-073443-designer-ux
