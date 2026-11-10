@@ -554,3 +554,5 @@ R-20261110-132222-engenheiro-apps
 R-20261110-132315-engenheiro-apps
 R-20261110-132547-modulo-integracao
 R-20261110-133607-modulo-vendedor
+R-20261110-135402-banco-dados
+R-20261110-135624-engenheiro-apps
