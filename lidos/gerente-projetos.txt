@@ -409,3 +409,8 @@ R-20261110-075122-corretor-redundancias
 R-20261110-075618-corretor-redundancias
 R-20261110-080117-corretor-redundancias
 R-20261110-080835-modulo-integracao
+R-20261110-081915-designer-ux
+R-20261110-082029-designer-ux
+R-20261110-082134-modulo-vendedor
+R-20261110-085951-alexandre
+R-20261110-085952-alexandre
