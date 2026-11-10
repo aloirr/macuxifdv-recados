@@ -599,3 +599,5 @@ R-20261110-161212-corretor-redundancias
 R-20261110-161522-modulo-vendedor
 R-20261110-162812-designer-ux
 R-20261110-162240-modulo-vendedor
+R-20261110-163403-modulo-integracao
+R-20261110-163549-modulo-vendedor
