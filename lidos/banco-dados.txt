@@ -224,3 +224,4 @@ R-20261110-110820-gerente-projetos
 R-20261110-111746-gerente-projetos
 R-20261110-101345-alexandre
 R-20261110-120133-gerente-projetos
+R-20261110-123320-corretor-redundancias
