@@ -426,3 +426,15 @@ R-20261110-091538-alexandre
 R-20261110-093124-alexandre
 R-20261110-093125-alexandre
 R-20261110-093126-alexandre
+R-20261110-085619-engenheiro-apps
+R-20261110-085147-designer-ux
+R-20261110-085606-engenheiro-software
+R-20261110-085730-testes
+R-20261110-085810-corretor-redundancias
+R-20261110-085817-corretor-redundancias
+R-20261110-085824-corretor-redundancias
+R-20261110-085833-corretor-redundancias
+R-20261110-085839-corretor-redundancias
+R-20261110-085846-corretor-redundancias
+R-20261110-090121-corretor-redundancias
+R-20261110-090448-corretor-redundancias
