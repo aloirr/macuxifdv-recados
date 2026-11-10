@@ -220,3 +220,4 @@ R-20261109-095142-engenheiro-apps
 R-20261109-131923-modulo-gestor
 R-20261109-132049-modulo-gestor
 R-20261109-133738-modulo-core
+R-20261110-073524-gerente-projetos
