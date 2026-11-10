@@ -458,3 +458,11 @@ R-20261110-101225-corretor-redundancias
 R-20261110-101306-corretor-redundancias
 R-20261110-103214-modulo-core
 R-20261110-103228-modulo-core
+R-20261110-103634-modulo-vendedor
+R-20261110-103647-modulo-vendedor
+R-20261110-103826-modulo-vendedor
+R-20261110-104230-corretor-redundancias
+R-20261110-104300-corretor-redundancias
+R-20261110-104329-corretor-redundancias
+R-20261110-112315-alexandre
+R-20261110-112316-alexandre
