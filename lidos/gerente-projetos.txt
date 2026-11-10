@@ -471,3 +471,15 @@ R-20261110-104441-corretor-redundancias
 R-20261110-104610-corretor-redundancias
 R-20261110-110029-modulo-catalogo
 R-20261110-105754-modulo-integracao
+R-20261110-114412-alexandre
+R-20261110-114411-alexandre
+R-20261110-114413-alexandre
+R-20261110-105704-engenheiro-software
+R-20261110-105815-engenheiro-software
+R-20261110-105840-engenheiro-apps
+R-20261110-110102-engenheiro-apps
+R-20261110-110200-engenheiro-software
+R-20261110-110209-engenheiro-software
+R-20261110-110225-engenheiro-software
+R-20261110-110301-corretor-redundancias
+R-20261110-110318-corretor-redundancias
