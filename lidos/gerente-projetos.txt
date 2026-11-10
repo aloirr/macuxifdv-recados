@@ -397,3 +397,6 @@ R-20261110-072214-engenheiro-software
 R-20261110-072444-engenheiro-software
 R-20261110-073136-banco-dados
 R-20261110-073443-designer-ux
+R-20261110-073124-designer-ux
+R-20261110-074208-engenheiro-apps
+R-20261110-074228-testes
