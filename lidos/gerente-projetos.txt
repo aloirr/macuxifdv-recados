@@ -553,3 +553,4 @@ R-20261110-130403-designer-ux
 R-20261110-132222-engenheiro-apps
 R-20261110-132315-engenheiro-apps
 R-20261110-132547-modulo-integracao
+R-20261110-133607-modulo-vendedor
