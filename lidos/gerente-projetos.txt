@@ -451,3 +451,8 @@ R-20261110-095605-designer-ux
 R-20261110-104554-alexandre
 R-20261110-104555-alexandre
 R-20261110-101022-banco-dados
+R-20261110-101042-banco-dados
+R-20261110-101104-corretor-redundancias
+R-20261110-101147-corretor-redundancias
+R-20261110-101225-corretor-redundancias
+R-20261110-101306-corretor-redundancias
