@@ -527,3 +527,12 @@ R-20261110-122827-modulo-gestor
 R-20261110-122836-modulo-gestor
 R-20261110-122845-modulo-gestor
 R-20261110-122948-engenheiro-apps
+R-20261110-123042-engenheiro-apps
+R-20261110-123056-engenheiro-apps
+R-20261110-123208-corretor-redundancias
+R-20261110-123235-corretor-redundancias
+R-20261110-123302-corretor-redundancias
+R-20261110-123312-modulo-core
+R-20261110-123320-corretor-redundancias
+R-20261110-123325-modulo-core
+R-20261110-123411-corretor-redundancias
