@@ -230,3 +230,4 @@ R-20261110-123235-corretor-redundancias
 R-20261110-123302-corretor-redundancias
 R-20261110-133607-modulo-vendedor
 R-20261110-141303-modulo-gestor
+R-20261110-144040-gerente-projetos
