@@ -508,3 +508,9 @@ R-20261110-114809-designer-ux
 R-20261110-114822-designer-ux
 R-20261110-114831-designer-ux
 R-20261110-114834-engenheiro-apps
+R-20261110-115456-engenheiro-apps
+R-20261110-115533-designer-ux
+R-20261110-115605-engenheiro-apps
+R-20261110-115831-modulo-vendedor
+R-20261110-115839-modulo-vendedor
+R-20261110-115947-engenheiro-software
