@@ -172,3 +172,8 @@ R-20261110-114634-designer-ux
 R-20261110-114716-designer-ux
 R-20261110-112431-designer-ux
 R-20261110-110820-gerente-projetos
+R-20261110-122723-modulo-core
+R-20261110-130205-designer-ux
+R-20261110-130219-designer-ux
+R-20261110-130233-designer-ux
+R-20261110-130247-designer-ux
