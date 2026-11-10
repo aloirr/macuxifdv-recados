@@ -304,3 +304,5 @@ R-20261110-091352-gerente-projetos
 R-20261110-095049-gerente-projetos
 R-20261110-101042-banco-dados
 R-20261110-101556-gerente-projetos
+R-20261110-104610-corretor-redundancias
+R-20261110-104805-gerente-projetos
