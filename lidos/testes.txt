@@ -221,3 +221,4 @@ R-20261109-131923-modulo-gestor
 R-20261109-132049-modulo-gestor
 R-20261109-133738-modulo-core
 R-20261110-073524-gerente-projetos
+R-20261110-153007-modulo-vendedor
