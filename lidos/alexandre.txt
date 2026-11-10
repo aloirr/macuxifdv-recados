@@ -298,3 +298,6 @@ R-20261110-074208-engenheiro-apps
 R-20261110-075445-gerente-projetos
 R-20261110-082029-designer-ux
 R-20261110-083517-engenheiro-apps
+R-20261110-084017-gerente-projetos
+R-20261110-084444-gerente-projetos
+R-20261110-091352-gerente-projetos
