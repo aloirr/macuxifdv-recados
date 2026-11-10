@@ -565,3 +565,10 @@ R-20261110-141332-corretor-redundancias
 R-20261110-141353-corretor-redundancias
 R-20261110-141510-corretor-redundancias
 R-20261110-141646-corretor-redundancias
+R-20261110-142828-designer-ux
+R-20261110-142937-designer-ux
+R-20261110-143007-designer-ux
+R-20261110-143235-engenheiro-software
+R-20261110-143328-modulo-vendedor
+R-20261110-143336-modulo-catalogo
+R-20261110-143342-modulo-vendedor
