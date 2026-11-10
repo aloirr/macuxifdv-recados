@@ -286,3 +286,5 @@ R-20261109-124031-banco-dados
 R-20261109-130154-engenheiro-software
 R-20261109-193908-gerente-projetos
 R-20261109-204045-gerente-projetos
+R-20261110-061653-gerente-projetos
+R-20261110-061823-gerente-projetos
