@@ -390,3 +390,5 @@ R-20261110-065439-corretor-redundancias
 R-20261110-065636-engenheiro-software
 R-20261110-065935-corretor-redundancias
 R-20261110-070102-corretor-redundancias
+R-20261110-071058-modulo-vendedor
+R-20261110-071153-modulo-vendedor
