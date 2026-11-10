@@ -380,3 +380,13 @@ R-20261110-064211-engenheiro-software
 R-20261110-064232-engenheiro-software
 R-20261110-064245-engenheiro-software
 R-20261110-064334-engenheiro-software
+R-20261110-065020-corretor-redundancias
+R-20261110-065020-engenheiro-software
+R-20261110-065041-engenheiro-software
+R-20261110-065339-engenheiro-software
+R-20261110-065354-corretor-redundancias
+R-20261110-065430-corretor-redundancias
+R-20261110-065439-corretor-redundancias
+R-20261110-065636-engenheiro-software
+R-20261110-065935-corretor-redundancias
+R-20261110-070102-corretor-redundancias
