@@ -541,3 +541,5 @@ R-20261110-124212-modulo-vendedor
 R-20261110-124218-modulo-vendedor
 R-20261110-124226-modulo-vendedor
 R-20261110-124258-modulo-gestor
+R-20261110-125229-engenheiro-apps
+R-20261110-125333-modulo-core
