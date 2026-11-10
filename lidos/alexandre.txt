@@ -310,3 +310,5 @@ R-20261110-105840-engenheiro-apps
 R-20261110-114809-designer-ux
 R-20261110-114822-designer-ux
 R-20261110-114831-designer-ux
+R-20261110-164342-designer-ux
+R-20261110-181520-gerente-projetos
