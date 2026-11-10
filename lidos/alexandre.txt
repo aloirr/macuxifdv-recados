@@ -277,3 +277,10 @@ R-20261108-235610-banco-dados
 R-20261109-041423-gerente-projetos
 R-20261109-043936-engenheiro-apps
 R-20261109-132526-engenheiro-software
+R-20261109-081828-gerente-projetos
+R-20261109-091629-designer-ux
+R-20261109-095146-modulo-vendedor
+R-20261109-100244-engenheiro-software
+R-20261109-112626-designer-ux
+R-20261109-124031-banco-dados
+R-20261109-130154-engenheiro-software
