@@ -484,3 +484,12 @@ R-20261110-110225-engenheiro-software
 R-20261110-110301-corretor-redundancias
 R-20261110-110318-corretor-redundancias
 R-20261110-110653-corretor-redundancias
+R-20261110-110430-banco-dados
+R-20261110-110448-corretor-redundancias
+R-20261110-110554-banco-dados
+R-20261110-110721-banco-dados
+R-20261110-110732-engenheiro-software
+R-20261110-110844-engenheiro-software
+R-20261110-111226-modulo-vendedor
+R-20261110-111236-modulo-vendedor
+R-20261110-111338-testes
