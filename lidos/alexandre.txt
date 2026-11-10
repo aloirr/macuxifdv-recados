@@ -284,3 +284,4 @@ R-20261109-100244-engenheiro-software
 R-20261109-112626-designer-ux
 R-20261109-124031-banco-dados
 R-20261109-130154-engenheiro-software
+R-20261109-193908-gerente-projetos
