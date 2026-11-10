@@ -469,3 +469,5 @@ R-20261110-112316-alexandre
 R-20261110-104408-corretor-redundancias
 R-20261110-104441-corretor-redundancias
 R-20261110-104610-corretor-redundancias
+R-20261110-110029-modulo-catalogo
+R-20261110-105754-modulo-integracao
