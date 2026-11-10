@@ -557,3 +557,9 @@ R-20261110-133607-modulo-vendedor
 R-20261110-135402-banco-dados
 R-20261110-135624-engenheiro-apps
 R-20261110-135700-modulo-core
+R-20261110-141059-modulo-catalogo
+R-20261110-141225-corretor-redundancias
+R-20261110-141303-modulo-gestor
+R-20261110-141320-corretor-redundancias
+R-20261110-141332-corretor-redundancias
+R-20261110-141353-corretor-redundancias
