@@ -496,3 +496,7 @@ R-20261110-111338-testes
 R-20261110-112038-engenheiro-apps
 R-20261110-112137-testes
 R-20261110-112431-designer-ux
+R-20261110-114257-banco-dados
+R-20261110-114317-engenheiro-software
+R-20261110-114350-designer-ux
+R-20261110-114353-engenheiro-software
