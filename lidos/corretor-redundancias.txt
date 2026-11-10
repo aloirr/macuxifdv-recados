@@ -166,3 +166,4 @@ R-20261110-104805-gerente-projetos
 R-20261110-112315-alexandre
 R-20261110-102754-gerente-projetos
 R-20261110-111226-modulo-vendedor
+R-20261110-120838-designer-ux
