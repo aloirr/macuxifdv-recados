@@ -170,3 +170,4 @@ R-20261110-120838-designer-ux
 R-20261110-120133-gerente-projetos
 R-20261110-114634-designer-ux
 R-20261110-114716-designer-ux
+R-20261110-112431-designer-ux
