@@ -456,3 +456,5 @@ R-20261110-101104-corretor-redundancias
 R-20261110-101147-corretor-redundancias
 R-20261110-101225-corretor-redundancias
 R-20261110-101306-corretor-redundancias
+R-20261110-103214-modulo-core
+R-20261110-103228-modulo-core
