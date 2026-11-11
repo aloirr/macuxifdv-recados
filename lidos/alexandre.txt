@@ -390,3 +390,9 @@ R-20261111-014008-testes
 R-20261111-014745-testes
 R-20261111-020211-modulo-core
 R-20261111-022251-corretor-redundancias
+R-20261111-023450-testes
+R-20261111-023920-gerente-projetos
+R-20261111-024228-banco-dados
+R-20261111-024437-corretor-redundancias
+R-20261111-024438-designer-ux
+R-20261111-024825-modulo-integracao
