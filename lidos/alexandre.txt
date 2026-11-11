@@ -480,3 +480,8 @@ R-20261111-113753-gerente-projetos
 R-20261111-115453-designer-ux
 R-20261111-115513-modulo-vendedor
 R-20261111-115753-gerente-projetos
+R-20261111-120449-corretor-redundancias
+R-20261111-120507-corretor-redundancias
+R-20261111-120643-corretor-redundancias
+R-20261111-121741-banco-dados
+R-20261111-121751-testes
