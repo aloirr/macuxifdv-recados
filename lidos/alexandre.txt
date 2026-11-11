@@ -471,3 +471,6 @@ R-20261111-105825-testes
 R-20261111-105839-testes
 R-20261111-110152-testes
 R-20261111-110203-modulo-catalogo
+R-20261111-111535-banco-dados
+R-20261111-111535-modulo-catalogo
+R-20261111-112147-engenheiro-software
