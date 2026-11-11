@@ -646,3 +646,6 @@ R-20261110-203228-corretor-redundancias
 R-20261110-195637-corretor-redundancias
 R-20261110-210839-designer-ux
 R-20261110-210839-banco-dados
+R-20261110-210223-banco-dados
+R-20261110-214735-alexandre
+R-20261110-214736-alexandre
