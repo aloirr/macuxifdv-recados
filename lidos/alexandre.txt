@@ -418,3 +418,5 @@ R-20261111-042642-gerente-projetos
 R-20261111-043548-testes
 R-20261111-044339-testes
 R-20261111-050440-gerente-projetos
+R-20261111-054033-engenheiro-apps
+R-20261111-054531-gerente-projetos
