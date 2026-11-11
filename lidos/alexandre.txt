@@ -413,3 +413,6 @@ R-20261111-040616-banco-dados
 R-20261111-040721-engenheiro-software
 R-20261111-040958-modulo-vendedor
 R-20261111-041700-engenheiro-apps
+R-20261111-042314-testes
+R-20261111-042642-gerente-projetos
+R-20261111-043548-testes
