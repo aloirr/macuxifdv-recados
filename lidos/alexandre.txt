@@ -319,3 +319,7 @@ R-20261110-195637-corretor-redundancias
 R-20261110-201249-corretor-redundancias
 R-20261110-203045-gerente-projetos
 R-20261110-203228-corretor-redundancias
+R-20261110-210658-gerente-projetos
+R-20261110-210839-designer-ux
+R-20261110-211048-gerente-projetos
+R-20261110-211402-gerente-projetos
