@@ -621,3 +621,5 @@ R-20261110-185300-designer-ux
 R-20261110-185736-engenheiro-apps
 R-20261110-192932-alexandre
 R-20261110-192933-alexandre
+R-20261110-193149-engenheiro-apps
+R-20261110-193721-corretor-redundancias
