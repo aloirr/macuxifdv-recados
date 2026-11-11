@@ -515,3 +515,7 @@ R-20261111-171350-gerente-projetos
 R-20261111-172208-modulo-catalogo
 R-20261111-174111-modulo-vendedor
 R-20261111-174842-testes
+R-20261111-175620-corretor-redundancias
+R-20261111-175739-gerente-projetos
+R-20261111-180015-testes
+R-20261111-180530-modulo-catalogo
