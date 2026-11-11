@@ -508,3 +508,5 @@ R-20261111-153741-modulo-vendedor
 R-20261111-155318-testes
 R-20261111-160829-gerente-projetos
 R-20261111-165326-modulo-vendedor
+R-20261111-165713-modulo-vendedor
+R-20261111-170649-corretor-redundancias
