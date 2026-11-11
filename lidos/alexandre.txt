@@ -371,3 +371,8 @@ R-20261111-003035-corretor-redundancias
 R-20261111-003102-corretor-redundancias
 R-20261111-003121-corretor-redundancias
 R-20261111-003205-testes
+R-20261111-004253-testes
+R-20261111-004518-engenheiro-software
+R-20261111-004542-corretor-redundancias
+R-20261111-004806-gerente-projetos
+R-20261111-005450-corretor-redundancias
