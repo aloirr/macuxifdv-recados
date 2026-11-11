@@ -522,3 +522,5 @@ R-20261111-180530-modulo-catalogo
 R-20261111-182515-corretor-redundancias
 R-20261111-182936-gerente-projetos
 R-20261111-184524-gerente-projetos
+R-20261111-184824-modulo-catalogo
+R-20261111-185325-corretor-redundancias
