@@ -644,3 +644,5 @@ R-20261110-201542-corretor-redundancias
 R-20261110-201602-corretor-redundancias
 R-20261110-203228-corretor-redundancias
 R-20261110-195637-corretor-redundancias
+R-20261110-210839-designer-ux
+R-20261110-210839-banco-dados
