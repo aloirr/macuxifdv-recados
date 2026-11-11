@@ -504,3 +504,4 @@ R-20261111-150750-corretor-redundancias
 R-20261111-151012-gerente-projetos
 R-20261111-152233-gerente-projetos
 R-20261111-152257-gerente-projetos
+R-20261111-153741-modulo-vendedor
