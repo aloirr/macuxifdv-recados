@@ -689,3 +689,7 @@ R-20261110-233500-engenheiro-software
 R-20261110-233506-banco-dados
 R-20261110-233556-engenheiro-apps
 R-20261110-233829-corretor-redundancias
+R-20261110-234619-modulo-integracao
+R-20261110-234624-engenheiro-apps
+R-20261110-234650-modulo-integracao
+R-20261110-234737-modulo-integracao
