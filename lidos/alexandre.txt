@@ -376,3 +376,4 @@ R-20261111-004518-engenheiro-software
 R-20261111-004542-corretor-redundancias
 R-20261111-004806-gerente-projetos
 R-20261111-005450-corretor-redundancias
+R-20261111-010814-banco-dados
