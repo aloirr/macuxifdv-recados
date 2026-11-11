@@ -635,3 +635,5 @@ R-20261110-202510-alexandre
 R-20261110-202511-alexandre
 R-20261110-202512-alexandre
 R-20261110-194616-modulo-core
+R-20261110-194832-modulo-vendedor
+R-20261110-195613-corretor-redundancias
