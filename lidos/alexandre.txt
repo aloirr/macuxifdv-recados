@@ -477,3 +477,6 @@ R-20261111-112147-engenheiro-software
 R-20261111-112924-testes
 R-20261111-113524-modulo-catalogo
 R-20261111-113753-gerente-projetos
+R-20261111-115453-designer-ux
+R-20261111-115513-modulo-vendedor
+R-20261111-115753-gerente-projetos
