@@ -354,3 +354,10 @@ R-20261110-231627-modulo-core
 R-20261110-232018-gerente-projetos
 R-20261110-232241-modulo-vendedor
 R-20261110-232802-gerente-projetos
+R-20261110-233259-banco-dados
+R-20261110-233500-engenheiro-software
+R-20261110-233506-banco-dados
+R-20261110-233824-gerente-projetos
+R-20261110-233829-corretor-redundancias
+R-20261110-234619-modulo-integracao
+R-20261110-234624-engenheiro-apps
