@@ -361,3 +361,7 @@ R-20261110-233824-gerente-projetos
 R-20261110-233829-corretor-redundancias
 R-20261110-234619-modulo-integracao
 R-20261110-234624-engenheiro-apps
+R-20261110-235132-gerente-projetos
+R-20261110-235317-testes
+R-20261111-000042-gerente-projetos
+R-20261111-000404-engenheiro-software
