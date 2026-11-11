@@ -450,3 +450,4 @@ R-20261111-081901-engenheiro-apps
 R-20261111-083524-gerente-projetos
 R-20261111-085420-engenheiro-software
 R-20261111-090016-gerente-projetos
+R-20261111-091945-modulo-vendedor
