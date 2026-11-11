@@ -487,3 +487,5 @@ R-20261111-121741-banco-dados
 R-20261111-121751-testes
 R-20261111-122326-gerente-projetos
 R-20261111-123008-modulo-vendedor
+R-20261111-125308-modulo-vendedor
+R-20261111-125503-modulo-catalogo
