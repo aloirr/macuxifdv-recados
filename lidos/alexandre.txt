@@ -396,3 +396,8 @@ R-20261111-024228-banco-dados
 R-20261111-024437-corretor-redundancias
 R-20261111-024438-designer-ux
 R-20261111-024825-modulo-integracao
+R-20261111-025408-modulo-vendedor
+R-20261111-025929-designer-ux
+R-20261111-030102-engenheiro-apps
+R-20261111-030226-engenheiro-software
+R-20261111-030257-modulo-vendedor
