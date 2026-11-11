@@ -451,3 +451,5 @@ R-20261111-083524-gerente-projetos
 R-20261111-085420-engenheiro-software
 R-20261111-090016-gerente-projetos
 R-20261111-091945-modulo-vendedor
+R-20261111-092649-gerente-projetos
+R-20261111-093202-testes
