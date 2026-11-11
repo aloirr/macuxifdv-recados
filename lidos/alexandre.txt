@@ -489,3 +489,5 @@ R-20261111-122326-gerente-projetos
 R-20261111-123008-modulo-vendedor
 R-20261111-125308-modulo-vendedor
 R-20261111-125503-modulo-catalogo
+R-20261111-130725-gerente-projetos
+R-20261111-130825-testes
