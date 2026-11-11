@@ -680,3 +680,6 @@ R-20261110-233900-alexandre
 R-20261110-225537-testes
 R-20261110-235606-alexandre
 R-20261110-231627-modulo-core
+R-20261110-231800-banco-dados
+R-20261110-232239-engenheiro-apps
+R-20261110-232241-modulo-vendedor
