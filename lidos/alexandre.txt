@@ -510,3 +510,6 @@ R-20261111-160829-gerente-projetos
 R-20261111-165326-modulo-vendedor
 R-20261111-165713-modulo-vendedor
 R-20261111-170649-corretor-redundancias
+R-20261111-171029-gerente-projetos
+R-20261111-171350-gerente-projetos
+R-20261111-172208-modulo-catalogo
