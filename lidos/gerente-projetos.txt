@@ -683,3 +683,9 @@ R-20261110-231627-modulo-core
 R-20261110-231800-banco-dados
 R-20261110-232239-engenheiro-apps
 R-20261110-232241-modulo-vendedor
+R-20261110-233244-banco-dados
+R-20261110-233259-banco-dados
+R-20261110-233500-engenheiro-software
+R-20261110-233506-banco-dados
+R-20261110-233556-engenheiro-apps
+R-20261110-233829-corretor-redundancias
