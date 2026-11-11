@@ -653,3 +653,9 @@ R-20261110-211519-modulo-integracao
 R-20261110-211554-engenheiro-apps
 R-20261110-215816-alexandre
 R-20261110-215817-alexandre
+R-20261110-212731-corretor-redundancias
+R-20261110-212744-corretor-redundancias
+R-20261110-212755-corretor-redundancias
+R-20261110-213202-modulo-vendedor
+R-20261110-221116-alexandre
+R-20261110-221117-alexandre
