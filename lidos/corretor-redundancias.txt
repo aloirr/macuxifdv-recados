@@ -188,3 +188,7 @@ R-20261110-152849-gerente-projetos
 R-20261110-153936-gerente-projetos
 R-20261110-155440-gerente-projetos
 R-20261110-162353-designer-ux
+R-20261111-174058-modulo-vendedor
+R-20261111-165705-modulo-vendedor
+R-20261111-165309-modulo-vendedor
+R-20261111-153734-modulo-vendedor
