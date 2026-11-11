@@ -192,3 +192,7 @@ R-20261111-174058-modulo-vendedor
 R-20261111-165705-modulo-vendedor
 R-20261111-165309-modulo-vendedor
 R-20261111-153734-modulo-vendedor
+R-20261111-184817-modulo-catalogo
+R-20261111-190538-modulo-catalogo
+R-20261111-190159-alexandre
+R-20261111-182936-gerente-projetos
