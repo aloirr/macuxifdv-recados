@@ -338,3 +338,4 @@ R-20261110-215722-gerente-projetos
 R-20261110-215856-gerente-projetos
 R-20261110-220724-modulo-core
 R-20261110-220751-modulo-core
+R-20261110-222400-modulo-catalogo
