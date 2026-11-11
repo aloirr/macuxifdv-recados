@@ -667,3 +667,4 @@ R-20261110-215433-designer-ux
 R-20261110-215258-modulo-vendedor
 R-20261110-215427-banco-dados
 R-20261110-215935-engenheiro-software
+R-20261110-220027-corretor-redundancias
