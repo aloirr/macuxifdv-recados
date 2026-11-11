@@ -282,3 +282,4 @@ R-20261110-192152-alexandre
 R-20261111-004628-gerente-projetos
 R-20261111-011107-gerente-projetos
 R-20261111-013632-testes
+R-20261111-061927-designer-ux
