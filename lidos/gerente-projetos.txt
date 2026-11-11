@@ -671,3 +671,7 @@ R-20261110-220027-corretor-redundancias
 R-20261110-220724-modulo-core
 R-20261110-220751-modulo-core
 R-20261110-223643-modulo-core
+R-20261110-222400-modulo-catalogo
+R-20261110-222559-modulo-core
+R-20261110-222723-corretor-redundancias
+R-20261110-223554-testes
