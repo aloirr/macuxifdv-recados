@@ -377,3 +377,11 @@ R-20261111-004542-corretor-redundancias
 R-20261111-004806-gerente-projetos
 R-20261111-005450-corretor-redundancias
 R-20261111-010814-banco-dados
+R-20261111-011551-gerente-projetos
+R-20261111-012011-corretor-redundancias
+R-20261111-012054-corretor-redundancias
+R-20261111-012929-modulo-integracao
+R-20261111-013240-testes
+R-20261111-013406-testes
+R-20261111-013428-testes
+R-20261111-013646-testes
