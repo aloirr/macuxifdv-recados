@@ -339,3 +339,10 @@ R-20261110-215856-gerente-projetos
 R-20261110-220724-modulo-core
 R-20261110-220751-modulo-core
 R-20261110-222400-modulo-catalogo
+R-20261110-222559-modulo-core
+R-20261110-222632-gerente-projetos
+R-20261110-223032-gerente-projetos
+R-20261110-223445-testes
+R-20261110-223554-testes
+R-20261110-223643-modulo-core
+R-20261110-223850-gerente-projetos
