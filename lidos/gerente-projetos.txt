@@ -642,3 +642,5 @@ R-20261110-205123-alexandre
 R-20261110-205124-alexandre
 R-20261110-201542-corretor-redundancias
 R-20261110-201602-corretor-redundancias
+R-20261110-203228-corretor-redundancias
+R-20261110-195637-corretor-redundancias
