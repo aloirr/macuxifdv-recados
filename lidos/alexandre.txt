@@ -466,3 +466,8 @@ R-20261111-103508-designer-ux
 R-20261111-103846-designer-ux
 R-20261111-103846-gerente-projetos
 R-20261111-105034-engenheiro-software
+R-20261111-105713-gerente-projetos
+R-20261111-105825-testes
+R-20261111-105839-testes
+R-20261111-110152-testes
+R-20261111-110203-modulo-catalogo
