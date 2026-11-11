@@ -453,3 +453,6 @@ R-20261111-090016-gerente-projetos
 R-20261111-091945-modulo-vendedor
 R-20261111-092649-gerente-projetos
 R-20261111-093202-testes
+R-20261111-094751-engenheiro-software
+R-20261111-095316-testes
+R-20261111-095704-corretor-redundancias
