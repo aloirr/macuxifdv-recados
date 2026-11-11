@@ -332,3 +332,9 @@ R-20261110-214225-gerente-projetos
 R-20261110-214300-gerente-projetos
 R-20261110-214458-gerente-projetos
 R-20261110-214842-gerente-projetos
+R-20261110-215427-banco-dados
+R-20261110-215551-gerente-projetos
+R-20261110-215722-gerente-projetos
+R-20261110-215856-gerente-projetos
+R-20261110-220724-modulo-core
+R-20261110-220751-modulo-core
