@@ -565,3 +565,4 @@ R-20261112-104841-gerente-projetos
 R-20261112-105730-designer-ux
 R-20261112-105815-designer-ux
 R-20261112-105844-designer-ux
+R-20261112-111349-gerente-projetos
