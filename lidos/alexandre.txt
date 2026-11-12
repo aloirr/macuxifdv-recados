@@ -549,3 +549,5 @@ R-20261112-033620-corretor-redundancias
 R-20261112-034316-corretor-redundancias
 R-20261112-041447-gerente-projetos
 R-20261112-050818-gerente-projetos
+R-20261112-052121-modulo-core
+R-20261112-053132-designer-ux
