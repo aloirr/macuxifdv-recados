@@ -530,3 +530,5 @@ R-20261111-194309-gerente-projetos
 R-20261111-194821-engenheiro-apps
 R-20261111-205903-engenheiro-software
 R-20261111-205906-gerente-projetos
+R-20261111-214136-gerente-projetos
+R-20261111-214257-gerente-projetos
