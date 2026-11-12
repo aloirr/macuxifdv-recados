@@ -556,3 +556,5 @@ R-20261112-074221-modulo-promotor
 R-20261112-074743-modulo-treinamento
 R-20261112-075005-modulo-catalogo
 R-20261112-080124-modulo-pesquisa
+R-20261112-091724-gerente-projetos
+R-20261112-091729-corretor-redundancias
