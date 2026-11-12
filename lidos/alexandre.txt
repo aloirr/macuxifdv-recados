@@ -598,3 +598,4 @@ R-20261112-165621-corretor-redundancias
 R-20261112-165622-gerente-projetos
 R-20261112-165737-corretor-redundancias
 R-20261112-173252-gerente-projetos
+R-20261112-181910-modulo-vendedor
