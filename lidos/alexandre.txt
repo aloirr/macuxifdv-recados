@@ -555,3 +555,4 @@ R-20261112-073557-modulo-gestor
 R-20261112-074221-modulo-promotor
 R-20261112-074743-modulo-treinamento
 R-20261112-075005-modulo-catalogo
+R-20261112-080124-modulo-pesquisa
