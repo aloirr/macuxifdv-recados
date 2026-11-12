@@ -594,3 +594,6 @@ R-20261112-154637-corretor-redundancias
 R-20261112-163940-modulo-integracao
 R-20261112-164015-modulo-integracao
 R-20261112-164620-gerente-projetos
+R-20261112-165621-corretor-redundancias
+R-20261112-165622-gerente-projetos
+R-20261112-165737-corretor-redundancias
