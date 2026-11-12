@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Archivo;src:url(../pdf3/fonts/Archivo_800ExtraBold.ttf);font-weight:800}
+@font-face{font-family:Archivo;src:url(../pdf3/fonts/Archivo_700Bold.ttf);font-weight:700}
+@font-face{font-family:Plex;src:url(../pdf3/fonts/IBMPlexSans_400Regular.ttf);font-weight:400}
+@font-face{font-family:Plex;src:url(../pdf3/fonts/IBMPlexSans_500Medium.ttf);font-weight:500}
+@font-face{font-family:Plex;src:url(../pdf3/fonts/IBMPlexSans_600SemiBold.ttf);font-weight:600}
+@font-face{font-family:Mono;src:url(../pdf3/fonts/IBMPlexMono_500Medium.ttf);font-weight:500}
+:root{--bg:#F3F4F1;--ink:#16202A;--mut:#5B6670;--line:#E2E5E0;--card:#fff;--acc:#C2540A;--acct:#8F3D06;--accbg:#FBEFE6}
+*{box-sizing:border-box}
+body{margin:0;background:#DADDD7;font-family:Plex,sans-serif;color:var(--ink);display:flex;gap:40px;padding:40px;align-items:flex-start}
+.tel{flex:none;width:390px;background:var(--bg);border-radius:28px;overflow:hidden;position:relative;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.sb{display:flex;justify-content:space-between;padding:12px 22px 4px;font-size:13px;font-weight:600;background:#fff}
+.hd{background:#fff;padding:6px 20px 0}
+.hd .t{display:flex;gap:12px;align-items:center}
+.hd .t b{font-family:Archivo;font-weight:800;font-size:20px}
+.hd .t small{display:block;font-size:12.5px;color:var(--mut);margin-top:1px}
+.tabs{display:flex;background:#fff;border-bottom:1px solid var(--line);margin-top:8px}
+.tabs div{flex:1;text-align:center;padding:12px 0;font-size:15px;font-weight:500;color:#3A4550}
+.tabs .on{color:var(--acc);font-weight:600;border-bottom:3px solid var(--acc)}
+.ct{padding:16px 16px 20px;display:flex;flex-direction:column;gap:10px}
+.lb{font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--mut);text-transform:uppercase;margin-top:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px}
+.row{display:flex;padding:11px 14px;border-top:1px solid var(--line);font-size:14.5px;gap:10px}
+.row:first-child{border-top:0}
+.row .k{width:96px;color:var(--mut);flex:none}
+.inp{background:#fff;border:1px solid #CDD2CC;border-radius:10px;padding:11px 12px;font-size:15px;min-height:44px}
+.sel{display:flex;justify-content:space-between;align-items:center}
+.chev{width:10px;height:10px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(45deg);margin:-4px 4px 0}
+.btn{background:var(--acc);color:#fff;border-radius:12px;text-align:center;padding:14px;font-weight:600;font-size:16px}
+.btn2{border:1.5px solid var(--ink);border-radius:12px;text-align:center;padding:10px 14px;font-weight:600;font-size:15px;background:#fff}
+.seg{display:flex;border:1px solid #CDD2CC;border-radius:12px;overflow:hidden}
+.seg div{flex:1;text-align:center;padding:12px;font-weight:600;background:#fff}
+.seg .on{background:var(--ink);color:#fff}
+.nav{display:flex;justify-content:space-around;background:#fff;border-top:1px solid var(--line);padding:10px 0 14px;font-size:12px;color:#3A4550}
+.mono{font-family:Mono;font-size:12.5px}
+.prod{display:flex;align-items:center;gap:10px;padding:12px 14px;border-top:1px solid var(--line)}
+.prod:first-child{border-top:0}
+.prod .d{flex:1;min-width:0}
+.prod .d b{font-size:15px;font-weight:600;display:block}
+.prod .meta{display:flex;gap:12px;white-space:nowrap;font-size:13px;color:var(--mut);margin-top:2px}
+.plus{width:44px;height:44px;border-radius:12px;border:1.5px solid var(--acc);color:var(--acc);display:grid;place-items:center;font-size:24px;font-weight:500;flex:none}
+.ok{background:var(--accbg);border-color:var(--accbg);font-size:20px}
+.dg{display:flex;gap:8px;align-items:center}
+.dsel{border:1px solid #CDD2CC;border-radius:10px;padding:11px 10px;background:#F7F8F6;font-weight:600;font-size:14px;display:flex;gap:8px;align-items:center;flex:none}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{font-weight:600;color:var(--mut);text-align:right;padding:9px 5px;font-size:11.5px;border-bottom:1px solid var(--line)}
+td{white-space:nowrap;text-align:right;padding:10px 5px;border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
+tr:nth-child(2) td{border-top:0}
+th:first-child,td:first-child{text-align:left;padding-left:12px}
+th:last-child,td:last-child{padding-right:12px}
+.cod{font-family:Mono;color:var(--acct);text-decoration:underline;text-underline-offset:3px;font-size:12.5px}
+.pop{position:absolute;background:var(--ink);color:#fff;border-radius:10px;padding:10px 12px;font-size:13.5px;line-height:1.35;width:220px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.pop:before{content:"";position:absolute;left:22px;top:-6px;border:6px solid transparent;border-top:0;border-bottom-color:var(--ink)}
+.pop small{display:block;color:#C9CED3;font-size:12px;margin-top:2px}
+.tot .row{justify-content:space-between}
+.sheet{position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:20px 20px 0 0;padding:10px 0 18px;box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+.dim{position:absolute;inset:0;background:rgba(22,32,42,.45)}
+.it{padding:14px 20px;font-size:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between}
+.tag{font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--acc)}
+</style>
+<style>
+.br{font-weight:400}
+.nm{text-decoration:underline dotted;text-underline-offset:4px}
+.segE div{padding:8px 6px;line-height:1.2}
+.segE small{display:block;font-size:12px;font-weight:500;margin-top:2px}
+.segE .on small{color:#C9CED3}
+.segE div:not(.on) small{color:var(--mut)}
+</style>
+</head><body>
+
+<!-- 1 ITENS -->
+<div class="tel" id="itens">
+<div class="sb"><span>22:40</span><span>4G ▮▮▮ 61%</span></div>
+<div class="hd"><div class="t"><span style="font-size:22px">‹</span><div><b>Padaria Trigo Fino</b><small>cód. C5008 · Novo pedido</small></div></div></div>
+<div class="tabs"><div>Venda</div><div class="on">Itens (3)</div><div>Entrega</div><div>Resumo</div></div>
+<div class="ct">
+ <div class="lb">Desc./Acrésc. geral</div>
+ <div class="dg"><div class="dsel">Desc % <span class="chev"></span></div><div class="inp" style="flex:1;text-align:right">5,0</div><div class="btn2">Aplicar</div></div>
+ <div class="inp" style="display:flex;gap:10px;align-items:center"><span style="font-size:18px">⌕</span> Agua<span style="margin-left:auto;color:var(--mut)">✕</span></div>
+ <div class="card">
+  <div class="prod"><div class="d"><b><span class="nm">Água mineral 1,5 L</span> <span class="br">- Fonte Clara</span></b><div class="meta"><span class="mono">AGU-1500</span><span>Emb. FD c/ 6</span><span>Est. 63</span></div></div><div class="plus ok">✓</div></div>
+  <div class="prod"><div class="d"><b><span class="nm">Água mineral 500 ml</span> <span class="br">- Fonte Clara</span></b><div class="meta"><span class="mono">AGU-500</span><span>Emb. FD c/ 12</span><span>Est. 412</span></div></div><div class="plus">+</div></div>
+  <div class="prod"><div class="d"><b><span class="nm">Água com gás 500 ml</span> <span class="br">- Fonte Clara</span></b><div class="meta"><span class="mono">AGG-500</span><span>Emb. FD c/ 12</span><span>Est. 96</span></div></div><div class="plus">+</div></div>
+  <div class="prod"><div class="d"><b><span class="nm">Água de coco 1 L</span> <span class="br">- Coco Norte</span></b><div class="meta"><span class="mono">ACO-1000</span><span>Emb. CX c/ 12</span><span>Est. 40</span></div></div><div class="plus">+</div></div>
+ </div>
+</div>
+<div class="nav"><span>Início</span><span>Rota</span><span style="color:var(--acc)">Clientes</span><span>Pedidos</span><span>Mais</span></div>
+</div>
+
+<!-- 1c ITENS SEM BUSCA -->
+<div class="tel" id="itensvazio">
+<div class="sb"><span>22:40</span><span>4G ▮▮▮ 61%</span></div>
+<div class="hd"><div class="t"><span style="font-size:22px">‹</span><div><b>Padaria Trigo Fino</b><small>cód. C5008 · Novo pedido</small></div></div></div>
+<div class="tabs"><div>Venda</div><div class="on">Itens (3)</div><div>Entrega</div><div>Resumo</div></div>
+<div class="ct">
+ <div class="lb">Desc./Acrésc. geral</div>
+ <div class="dg"><div class="dsel">Desc % <span class="chev"></span></div><div class="inp" style="flex:1;text-align:right">5,0</div><div class="btn2">Aplicar</div></div>
+ <div class="inp" style="display:flex;gap:10px;align-items:center;color:var(--mut)"><span style="font-size:18px">⌕</span> Buscar produto</div>
+ <div class="card">
+  <div class="prod"><div class="d"><b><span class="nm">Água mineral 1,5 L</span> <span class="br">- Fonte Clara</span></b><div class="meta"><span class="mono">AGU-1500</span><span>Emb. FD c/ 6</span><span>Est. 63</span></div></div><div class="plus ok">✓</div></div>
+  <div class="prod"><div class="d"><b><span class="nm">Leite em pó integral 400 g</span> <span class="br">- Vale Verde</span></b><div class="meta"><span class="mono">LPO-400</span><span>Emb. UN</span><span>Est. 118</span></div></div><div class="plus ok">✓</div></div>
+  <div class="prod"><div class="d"><b><span class="nm">Filtro de papel 103 c/ 30</span> <span class="br">- Casa Norte</span></b><div class="meta"><span class="mono">FIL-103</span><span>Emb. UN</span><span>Est. 54</span></div></div><div class="plus ok">✓</div></div>
+ </div>
+</div>
+<div class="nav"><span>Início</span><span>Rota</span><span style="color:var(--acc)">Clientes</span><span>Pedidos</span><span>Mais</span></div>
+</div>
+
+<!-- 1b ITENS COM BALAO -->
+<div class="tel" id="itenspop">
+<div class="sb"><span>22:40</span><span>4G ▮▮▮ 61%</span></div>
+<div class="hd"><div class="t"><span style="font-size:22px">‹</span><div><b>Padaria Trigo Fino</b><small>cód. C5008 · Novo pedido</small></div></div></div>
+<div class="tabs"><div>Venda</div><div class="on">Itens (3)</div><div>Entrega</div><div>Resumo</div></div>
+<div class="ct">
+ <div class="lb">Desc./Acrésc. geral</div>
+ <div class="dg"><div class="dsel">Desc % <span class="chev"></span></div><div class="inp" style="flex:1;text-align:right">5,0</div><div class="btn2">Aplicar</div></div>
+ <div class="inp" style="display:flex;gap:10px;align-items:center"><span style="font-size:18px">⌕</span> Agua<span style="margin-left:auto;color:var(--mut)">✕</span></div>
+ <div class="card" style="position:relative">
+  <div class="prod"><div class="d"><b><span class="nm">Água mineral 1,5 L</span> <span class="br">- Fonte Clara</span></b><div class="meta"><span class="mono">AGU-1500</span><span>Emb. FD c/ 6</span><span>Est. 63</span></div></div><div class="plus ok">✓</div></div>
+  <div class="prod"><div class="d"><b><span class="nm">Água mineral 500 ml</span> <span class="br">- Fonte Clara</span></b><div class="meta"><span class="mono">AGU-500</span><span>Emb. FD c/ 12</span><span>Est. 412</span></div></div><div class="plus">+</div></div>
+  <div class="prod"><div class="d"><b><span class="nm">Água com gás 500 ml</span> <span class="br">- Fonte Clara</span></b><div class="meta"><span class="mono">AGG-500</span><span>Emb. FD c/ 12</span><span>Est. 96</span></div></div><div class="plus">+</div></div>
+  <div class="prod"><div class="d"><b><span class="nm">Água de coco 1 L</span> <span class="br">- Coco Norte</span></b><div class="meta"><span class="mono">ACO-1000</span><span>Emb. CX c/ 12</span><span>Est. 40</span></div></div><div class="plus">+</div></div>
+  <div class="pop" style="left:10px;top:130px;width:300px;z-index:5"><div style="font-size:13.5px;line-height:1.45">Água mineral natural sem gás, garrafa PET 500 ml. Para venda gelada em balcão, lanchonete e conveniência. Validade de 12 meses.</div></div>
+ </div>
+</div>
+<div class="nav"><span>Início</span><span>Rota</span><span style="color:var(--acc)">Clientes</span><span>Pedidos</span><span>Mais</span></div>
+</div>
+
+<!-- 2 ENTREGA -->
+<div class="tel" id="entrega">
+<div class="sb"><span>22:41</span><span>4G ▮▮▮ 61%</span></div>
+<div class="hd"><div class="t"><span style="font-size:22px">‹</span><div><b>Padaria Trigo Fino</b><small>cód. C5008 · Novo pedido</small></div></div></div>
+<div class="tabs"><div>Venda</div><div>Itens (3)</div><div class="on">Entrega</div><div>Resumo</div></div>
+<div class="ct">
+ <div class="lb">Frete</div>
+ <div class="seg"><div>CIF</div><div class="on">FOB</div></div>
+ <div style="font-size:14px;font-weight:600;color:#3A4550;margin-top:4px">Transportadora</div>
+ <div class="inp sel"><span>Rio Negro Cargas</span><span class="chev"></span></div>
+ <div class="lb" style="display:flex;justify-content:space-between">Endereço de entrega<span style="color:var(--acct);letter-spacing:0;text-transform:none;font-size:15px">Editar</span></div>
+ <div class="card" style="padding:12px 14px;font-size:14.5px;line-height:1.5"><span style="background:#ECEEEA;border-radius:6px;padding:2px 8px;font-size:12.5px;font-weight:600">Principal</span><br>Rua Ipixuna, 245<br>Praça 14 de Janeiro · Manaus/AM<br>CEP 69020-160</div>
+ <div class="lb">Observação da entrega</div>
+ <div class="inp" style="min-height:76px">Descarregar pela Rua Ipixuna, portão lateral.</div>
+ <div class="btn" style="margin-top:6px">Avançar</div>
+</div>
+<div class="nav"><span>Início</span><span>Rota</span><span style="color:var(--acc)">Clientes</span><span>Pedidos</span><span>Mais</span></div>
+</div>
+
+<!-- 3 LISTA -->
+<div class="tel" id="lista">
+<div class="sb"><span>22:41</span><span>4G ▮▮▮ 61%</span></div>
+<div class="hd"><div class="t"><span style="font-size:22px">‹</span><div><b>Padaria Trigo Fino</b><small>cód. C5008 · Novo pedido</small></div></div></div>
+<div class="tabs"><div>Venda</div><div>Itens (3)</div><div class="on">Entrega</div><div>Resumo</div></div>
+<div class="ct" style="height:640px">
+ <div class="lb">Frete</div>
+ <div class="seg"><div>CIF</div><div class="on">FOB</div></div>
+ <div style="font-size:14px;font-weight:600;color:#3A4550;margin-top:4px">Transportadora</div>
+ <div class="inp sel" style="color:var(--mut)"><span>Escolha a transportadora</span><span class="chev"></span></div>
+</div>
+<div class="dim"></div>
+<div class="sheet">
+ <div style="width:40px;height:4px;background:#CDD2CC;border-radius:2px;margin:0 auto 10px"></div>
+ <div style="padding:6px 20px 12px;font-family:Archivo;font-weight:800;font-size:18px">Transportadora</div>
+ <div style="padding:0 20px 10px"><div class="inp" style="color:var(--mut)">⌕  Buscar</div></div>
+ <div class="it"><span>Expresso Roraima</span></div>
+ <div class="it"><span>Rio Negro Cargas</span></div>
+ <div class="it"><span>Transamazônica Log</span></div>
+ <div class="it"><span>Via Norte Transportes</span></div>
+ <div class="it" style="color:var(--acct);font-weight:600"><span>Outra (digitar)</span></div>
+</div>
+</div>
+
+<!-- 4 RESUMO -->
+<div class="tel" id="resumo">
+<div class="sb"><span>22:42</span><span>4G ▮▮▮ 61%</span></div>
+<div class="hd"><div class="t"><span style="font-size:22px">‹</span><div><b>Padaria Trigo Fino</b><small>cód. C5008 · Novo pedido</small></div></div></div>
+<div class="tabs"><div>Venda</div><div>Itens (3)</div><div>Entrega</div><div class="on">Resumo</div></div>
+<div class="ct">
+ <div class="lb">Cliente</div>
+ <div class="card"><div class="row"><span class="k">Razão social</span>Padaria Trigo Fino Ltda</div><div class="row"><span class="k">CNPJ</span>23.456.789/0001-07</div></div>
+ <div class="lb">Condição de pagamento</div>
+ <div class="card"><div class="row"><span class="k">Forma</span>Boleto</div><div class="row"><span class="k">Prazo</span>28/56 dias</div></div>
+ <div class="lb">Itens</div>
+ <div class="card" style="position:relative">
+  <table>
+   <tr><th>Código</th><th style="text-align:left">Emb.</th><th>Qtd</th><th>Preço unit.</th><th>Desc./ Acrésc.</th><th>Total</th></tr>
+   <tr><td><span class="cod">AGU-1500</span></td><td style="text-align:left">FD c/ 6</td><td>3</td><td>19,92</td><td>−5,0%</td><td><b>56,77</b></td></tr>
+   <tr><td><span class="cod">LPO-400</span></td><td style="text-align:left">UN</td><td>6</td><td>17,75</td><td>−10,0%</td><td><b>95,85</b></td></tr>
+   <tr><td><span class="cod">FIL-103</span></td><td style="text-align:left">UN</td><td>10</td><td>5,76</td><td>0,0%</td><td><b>57,60</b></td></tr>
+  </table>
+  <div class="pop" style="left:6px;top:134px;width:260px">Leite em pó integral 400 g - Vale Verde</div>
+ </div>
+ <div class="lb">Entrega</div>
+ <div class="card"><div class="row"><span class="k">Frete</span>FOB · Rio Negro Cargas</div><div class="row"><span class="k">Endereço</span>Rua Ipixuna, 245 · Praça 14 de Janeiro · Manaus/AM</div><div class="row"><span class="k">Observação</span>Descarregar pela Rua Ipixuna, portão lateral.</div></div>
+ <div class="lb">Observação do pedido</div>
+ <div class="inp" style="min-height:64px;color:var(--mut)">Escreva aqui</div>
+ <div class="lb">Totais</div>
+ <div class="card tot"><div class="row"><span style="color:var(--mut)">Valor de tabela</span><b>R$ 223,86</b></div><div class="row"><span style="color:var(--mut)">Desconto 6,1%</span><b>− R$ 13,64</b></div><div class="row" style="font-size:17px"><b>Valor final</b><b style="font-family:Archivo;font-size:22px">R$ 210,22</b></div></div>
+ <div class="btn">Salvar e enviar pedido</div>
+</div>
+</div>
+
+
+<div class="tel" id="folhaD" style="height:844px">
+<div class="sb"><span>22:31</span><span>4G ▮▮▮ 64%</span></div>
+<div class="hd"><div class="t"><span style="font-size:22px">‹</span><div><b>Padaria Trigo Fino</b><small>cód. C5008 · Novo pedido</small></div></div></div>
+<div class="tabs"><div>Venda</div><div class="on">Itens (3)</div><div>Entrega</div><div>Resumo</div></div>
+<div class="dim"></div>
+<div class="sheet" style="padding:10px 20px 22px">
+ <div style="width:40px;height:4px;background:#CDD2CC;border-radius:2px;margin:0 auto 14px"></div>
+ <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div style="font-family:Archivo;font-weight:800;font-size:19px;line-height:1.25">Água mineral 1,5 L <span style="font-family:Plex;font-weight:400">- Fonte Clara</span></div><span style="font-size:22px;line-height:1">✕</span></div>
+ <div class="mono" style="color:var(--mut);margin-top:6px;font-size:13.5px">AGU-1500</div>
+ <div style="display:flex;gap:12px;margin-top:16px;align-items:flex-start">
+  <div style="width:calc(50% - 6px);flex:none"><div class="lb" style="margin-top:0">Embalagem</div>
+   <div style="display:flex;border:1px solid #CDD2CC;border-radius:12px;overflow:hidden;margin-top:8px;height:46px"><div style="flex:1;display:grid;place-items:center;font-weight:600;font-size:14px;background:#fff">UN</div><div style="flex:1;display:grid;place-items:center;font-weight:600;font-size:14px;background:var(--ink);color:#fff">FD c/ 6</div></div></div>
+  <div style="text-align:right;flex:none;width:84px;margin-left:auto"><div class="lb" style="margin-top:0">Estoque</div>
+   <div style="display:block;width:84px;text-align:center;box-sizing:border-box;margin-top:8px;height:46px;line-height:43px;padding:0 8px;border-radius:12px;white-space:nowrap;font-weight:600;font-size:15px;border:1.5px solid #C9CEC8;background:#fff;color:var(--ink)">99.999</div></div>
+ </div>
+ <div style="display:flex;gap:12px;margin-top:16px">
+  <div style="flex:1"><div class="lb">Quantidade</div><div style="display:flex;border:1px solid #CDD2CC;border-radius:12px;overflow:hidden;margin-top:8px;background:#fff;height:46px"><div style="width:44px;display:grid;place-items:center;font-size:18px">−</div><div style="flex:1;display:grid;place-items:center;font-size:16px;font-weight:600;border-left:1px solid #CDD2CC;border-right:1px solid #CDD2CC">3</div><div style="width:44px;display:grid;place-items:center;font-size:18px">+</div></div></div>
+  <div style="flex:1"><div class="lb">Desc./Acrésc.</div><div style="display:flex;border:1px solid #CDD2CC;border-radius:12px;overflow:hidden;margin-top:8px;background:#fff;height:46px"><div style="padding:0 8px;display:grid;place-items:center;background:#F7F8F6;font-weight:600;font-size:14px;border-right:1px solid #CDD2CC">Desc %⌄</div><div style="flex:1;display:grid;align-items:center;justify-items:end;padding:0 10px;color:var(--mut)">0,0</div></div></div>
+ </div>
+ <div class="card" style="margin-top:16px;display:flex;justify-content:space-between;padding:14px 16px;font-size:16px"><b>Valor final</b><b style="font-family:Archivo;font-size:20px">R$ 59,76</b></div>
+ <div class="btn" style="margin-top:16px">Adicionar ao pedido</div>
+</div>
+</div>
+
+<div class="tel" id="folhaE" style="height:844px">
+<div class="sb"><span>22:31</span><span>4G ▮▮▮ 64%</span></div>
+<div class="hd"><div class="t"><span style="font-size:22px">‹</span><div><b>Padaria Trigo Fino</b><small>cód. C5008 · Novo pedido</small></div></div></div>
+<div class="tabs"><div>Venda</div><div class="on">Itens (3)</div><div>Entrega</div><div>Resumo</div></div>
+<div class="dim"></div>
+<div class="sheet" style="padding:10px 20px 22px">
+ <div style="width:40px;height:4px;background:#CDD2CC;border-radius:2px;margin:0 auto 14px"></div>
+ <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div style="font-family:Archivo;font-weight:800;font-size:19px;line-height:1.25">Água de coco 1 L <span style="font-family:Plex;font-weight:400">- Coco Norte</span></div><span style="font-size:22px;line-height:1">✕</span></div>
+ <div class="mono" style="color:var(--mut);margin-top:6px;font-size:13.5px">ACO-1000</div>
+ <div style="display:flex;gap:12px;margin-top:16px;align-items:flex-start">
+  <div style="width:calc(50% - 6px);flex:none"><div class="lb" style="margin-top:0">Embalagem</div>
+   <div style="display:flex;border:1px solid #CDD2CC;border-radius:12px;overflow:hidden;margin-top:8px;height:46px"><div style="flex:1;display:grid;place-items:center;font-weight:600;font-size:14px;background:#fff">UN</div><div style="flex:1;display:grid;place-items:center;font-weight:600;font-size:14px;background:var(--ink);color:#fff">CX c/ 12</div></div></div>
+  <div style="text-align:right;flex:none;width:84px;margin-left:auto"><div class="lb" style="margin-top:0">Estoque</div>
+   <div style="display:block;width:84px;text-align:center;box-sizing:border-box;margin-top:8px;height:46px;line-height:43px;padding:0 8px;border-radius:12px;white-space:nowrap;font-weight:600;font-size:15px;border:1.5px solid var(--acc);background:var(--accbg);color:var(--acct)">7</div><div style="font-size:12px;color:var(--acct);font-weight:600;margin-top:4px;white-space:nowrap;width:200px;margin-left:-116px;text-align:right">⚠ Risco de ruptura</div></div>
+ </div>
+ <div style="display:flex;gap:12px;margin-top:16px">
+  <div style="flex:1"><div class="lb">Quantidade</div><div style="display:flex;border:1px solid #CDD2CC;border-radius:12px;overflow:hidden;margin-top:8px;background:#fff;height:46px"><div style="width:44px;display:grid;place-items:center;font-size:18px">−</div><div style="flex:1;display:grid;place-items:center;font-size:16px;font-weight:600;border-left:1px solid #CDD2CC;border-right:1px solid #CDD2CC">3</div><div style="width:44px;display:grid;place-items:center;font-size:18px">+</div></div></div>
+  <div style="flex:1"><div class="lb">Desc./Acrésc.</div><div style="display:flex;border:1px solid #CDD2CC;border-radius:12px;overflow:hidden;margin-top:8px;background:#fff;height:46px"><div style="padding:0 8px;display:grid;place-items:center;background:#F7F8F6;font-weight:600;font-size:14px;border-right:1px solid #CDD2CC">Desc %⌄</div><div style="flex:1;display:grid;align-items:center;justify-items:end;padding:0 10px;color:var(--mut)">0,0</div></div></div>
+ </div>
+ <div class="card" style="margin-top:16px;display:flex;justify-content:space-between;padding:14px 16px;font-size:16px"><b>Valor final</b><b style="font-family:Archivo;font-size:20px">R$ 258,30</b></div>
+ <div class="btn" style="margin-top:16px">Adicionar ao pedido</div>
+</div>
+</div>
+
+</body></html>
