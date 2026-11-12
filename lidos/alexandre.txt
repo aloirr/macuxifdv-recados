@@ -575,3 +575,6 @@ R-20261112-125050-corretor-redundancias
 R-20261112-125107-modulo-catalogo
 R-20261112-125132-corretor-redundancias
 R-20261112-130019-corretor-redundancias
+R-20261112-134836-designer-ux
+R-20261112-135754-designer-ux
+R-20261112-140201-banco-dados
