@@ -552,3 +552,6 @@ R-20261112-050818-gerente-projetos
 R-20261112-052121-modulo-core
 R-20261112-053132-designer-ux
 R-20261112-073557-modulo-gestor
+R-20261112-074221-modulo-promotor
+R-20261112-074743-modulo-treinamento
+R-20261112-075005-modulo-catalogo
