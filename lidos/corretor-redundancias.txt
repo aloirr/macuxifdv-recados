@@ -196,3 +196,4 @@ R-20261111-184817-modulo-catalogo
 R-20261111-190538-modulo-catalogo
 R-20261111-190159-alexandre
 R-20261111-182936-gerente-projetos
+R-20261111-232003-designer-ux
