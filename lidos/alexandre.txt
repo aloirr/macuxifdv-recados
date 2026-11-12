@@ -593,3 +593,4 @@ R-20261112-154622-modulo-vendedor
 R-20261112-154637-corretor-redundancias
 R-20261112-163940-modulo-integracao
 R-20261112-164015-modulo-integracao
+R-20261112-164620-gerente-projetos
