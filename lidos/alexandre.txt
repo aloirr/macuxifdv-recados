@@ -568,3 +568,9 @@ R-20261112-105844-designer-ux
 R-20261112-111349-gerente-projetos
 R-20261112-113330-modulo-integracao
 R-20261112-113947-gerente-projetos
+R-20261112-124035-corretor-redundancias
+R-20261112-124110-corretor-redundancias
+R-20261112-124827-engenheiro-software
+R-20261112-125050-corretor-redundancias
+R-20261112-125107-modulo-catalogo
+R-20261112-125132-corretor-redundancias
