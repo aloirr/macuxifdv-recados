@@ -584,3 +584,4 @@ R-20261112-145438-modulo-catalogo
 R-20261112-145516-modulo-catalogo
 R-20261112-024249-gerente-projetos
 R-20261112-152700-engenheiro-software
+R-20261112-153020-designer-ux
