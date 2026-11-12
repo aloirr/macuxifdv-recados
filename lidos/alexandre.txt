@@ -562,3 +562,6 @@ R-20261112-094240-testes
 R-20261112-102940-modulo-vendedor
 R-20261112-104840-designer-ux
 R-20261112-104841-gerente-projetos
+R-20261112-105730-designer-ux
+R-20261112-105815-designer-ux
+R-20261112-105844-designer-ux
