@@ -559,3 +559,4 @@ R-20261112-080124-modulo-pesquisa
 R-20261112-091724-gerente-projetos
 R-20261112-091729-corretor-redundancias
 R-20261112-094240-testes
+R-20261112-102940-modulo-vendedor
