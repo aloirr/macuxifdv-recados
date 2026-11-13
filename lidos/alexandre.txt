@@ -686,3 +686,5 @@ R-20261113-165223-gerente-projetos
 R-20261113-170748-gerente-projetos
 R-20261113-170808-gerente-projetos
 R-20261113-173327-modulo-vendedor
+R-20261113-174052-gerente-projetos
+R-20261113-174515-gerente-projetos
