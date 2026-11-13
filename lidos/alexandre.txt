@@ -622,3 +622,4 @@ R-20261112-203444-corretor-redundancias
 R-20261112-204142-testes
 R-20261112-205959-modulo-core
 R-20261112-210821-gerente-projetos
+R-20261112-213045-gerente-projetos
