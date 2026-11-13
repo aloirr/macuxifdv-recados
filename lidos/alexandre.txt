@@ -662,3 +662,6 @@ R-20261113-104319-corretor-redundancias
 R-20261113-104539-corretor-redundancias
 R-20261113-104608-corretor-redundancias
 R-20261113-104633-corretor-redundancias
+R-20261113-112709-engenheiro-software
+R-20261113-112712-testes
+R-20261113-113642-engenheiro-software
