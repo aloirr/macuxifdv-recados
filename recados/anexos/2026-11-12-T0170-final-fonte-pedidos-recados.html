@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Archivo;src:url(../pdf3/fonts/Archivo_800ExtraBold.ttf);font-weight:800}
+@font-face{font-family:Archivo;src:url(../pdf3/fonts/Archivo_700Bold.ttf);font-weight:700}
+@font-face{font-family:Plex;src:url(../pdf3/fonts/IBMPlexSans_400Regular.ttf);font-weight:400}
+@font-face{font-family:Plex;src:url(../pdf3/fonts/IBMPlexSans_500Medium.ttf);font-weight:500}
+@font-face{font-family:Plex;src:url(../pdf3/fonts/IBMPlexSans_600SemiBold.ttf);font-weight:600}
+:root{--bg:#F3F4F1;--ink:#16202A;--ink2:#4A5562;--mut:#5B6670;--line:#E2E5E0;--card:#fff;--acc:#C2540A;--acct:#8F3D06;--accbg:#FBEFE6;--ok:#1D6B4F;--okbg:#E3F1EA;--warn:#7A5A00;--warnbg:#FFF4D6;--err:#B42318;--errbg:#FDE8E6;--panel:#18212C}
+*{box-sizing:border-box}
+body{margin:0;background:#DADDD7;font-family:Plex,sans-serif;color:var(--ink);display:flex;gap:40px;padding:40px;align-items:flex-start}
+.tel{flex:none;width:412px;height:892px;background:var(--bg);border-radius:30px;overflow:hidden;position:relative;box-shadow:0 2px 10px rgba(0,0,0,.08);display:flex;flex-direction:column}
+.sb{display:flex;justify-content:space-between;padding:12px 24px 4px;font-size:13px;font-weight:600}
+.panel{background:var(--panel);color:#fff;border-radius:0 0 26px 26px;padding:0 0 22px}
+.panel .sb{color:#fff}
+.panel .in{padding:8px 22px 0}
+.dt{font-size:14px;color:#C9CED3}
+.hi{font-family:Archivo;font-weight:800;font-size:28px;margin-top:2px;letter-spacing:-.3px}
+.sub{font-size:14px;color:#C9CED3;margin-top:4px}
+.ct{padding:18px 20px 12px;display:flex;flex-direction:column;gap:12px;flex:1;overflow:hidden}
+.sec{display:flex;align-items:center;gap:10px;font-family:Archivo;font-weight:700;font-size:18px;margin-top:4px}
+.sec .r{margin-left:auto;font-family:Plex;font-weight:600;font-size:14px;color:var(--ink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px}
+.meta{padding:16px 18px}
+.big{font-family:Archivo;font-weight:800;font-size:30px;letter-spacing:-.4px}
+.big small{font-family:Plex;font-weight:400;font-size:15px;color:var(--ink2);letter-spacing:0;margin-left:6px}
+.bar{height:8px;border-radius:4px;background:#ECEEE9;margin:12px 0 10px;position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;border-radius:4px;background:var(--acc)}
+.hoje{font-size:14px;color:var(--ink2)}.hoje b{color:var(--ink);font-weight:600}
+.cols{display:flex;border-top:1px solid var(--line);margin-top:12px;padding-top:10px}
+.cols div{flex:1 1 auto;font-size:12.5px;color:var(--ink2)}
+.cols div+div{border-left:1px solid var(--line);padding-left:12px}
+.cols b{display:block;white-space:nowrap;font-family:Archivo;font-weight:800;font-size:16px;color:var(--ink);margin-top:2px}
+.btnrec{display:flex;align-items:center;gap:12px;padding:16px 18px;background:var(--accbg);border:1px solid #F3C9A8;border-radius:16px}
+.btnrec b{font-family:Archivo;font-weight:700;font-size:17px}
+.badge{margin-left:auto;background:var(--acc);color:#fff;font-weight:600;font-size:13.5px;border-radius:999px;padding:4px 11px}
+.chev{width:9px;height:9px;border-right:2px solid var(--ink);border-top:2px solid var(--ink);transform:rotate(45deg);margin-left:6px;flex:none}
+.sync{margin-top:auto;background:var(--ink);color:#fff;border-radius:16px;text-align:center;padding:15px;font-weight:600;font-size:16px}
+.synct{text-align:center;font-size:12.5px;color:var(--mut);margin-top:-2px}
+.nav{display:flex;justify-content:space-around;background:#fff;border-top:1px solid var(--line);padding:8px 0 12px;font-size:11px;color:#3A4550;font-weight:500}
+.nav div{display:flex;flex-direction:column;align-items:center;gap:3px;width:16%}
+.nav svg{width:22px;height:22px}
+.nav .on{color:var(--acc);font-weight:600}
+.hd{padding:6px 22px 10px}
+.hd .t{font-family:Archivo;font-weight:800;font-size:26px}
+.hd .s{font-size:13.5px;color:var(--mut);margin-top:2px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kpi{padding:12px 14px}
+.kpi .l{font-size:12.5px;font-weight:600;color:var(--ink2);display:flex;align-items:center}
+.kpi .v{font-family:Archivo;font-weight:800;font-size:20px;margin-top:4px}
+.kpi .v small{font-family:Plex;font-weight:500;font-size:14px;color:var(--ink2)}
+.tot{grid-column:1/3;display:flex;align-items:center;justify-content:space-between;background:var(--ink);color:#fff;border:0}
+.tot .l{color:#C9CED3}
+.tot .v small{color:#C9CED3}
+.chips{display:flex;gap:6px;flex-wrap:nowrap;overflow:hidden}
+.chip{border:1px solid #CDD2CC;background:#fff;border-radius:999px;padding:6px 11px;font-size:12.5px;font-weight:500;white-space:nowrap}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.lst .it{display:flex;align-items:center;gap:10px;padding:11px 14px;border-top:1px solid var(--line)}
+.lst .it:first-child{border-top:0}
+.lst .n{flex:1;min-width:0}
+.lst .n b{display:block;font-size:14.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lst .n span{font-size:12.5px;color:var(--mut)}
+.lst .r{text-align:right;flex:none}
+.lst .r b{display:block;font-size:14.5px;font-weight:600}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;border-radius:999px;padding:2px 9px;margin-top:3px}
+.t-af{background:#E6EEF7;color:#24456B}.t-ap{background:var(--warnbg);color:var(--warn)}.t-re{background:var(--errbg);color:var(--err)}.t-fa{background:var(--okbg);color:var(--ok)}
+.perf .row{padding:14px 16px}
+.perf .row+.row{border-top:1px solid var(--line)}
+.perf .k{display:flex;justify-content:space-between;font-size:14px}
+.perf .k b{font-weight:600}
+.perf .k span{color:var(--ink2)}
+.seg{display:flex;border:1px solid #CDD2CC;border-radius:12px;overflow:hidden;background:#fff}
+.seg div{flex:1;text-align:center;padding:9px;font-weight:600;font-size:14px}
+.seg .on{background:var(--ink);color:#fff}
+.rec .it{display:flex;gap:12px;padding:13px 16px;border-top:1px solid var(--line)}
+.rec .it:first-child{border-top:0}
+.ico{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;flex:none;font-size:17px}
+.rec .tx{flex:1;min-width:0}
+.rec .tx b{font-size:14.5px}
+.rec .tx p{margin:2px 0 0;font-size:13.5px;color:var(--ink2);line-height:1.35}
+.rec .q{font-size:12px;color:var(--mut);white-space:nowrap}
+.box{width:20px;height:20px;border:2px solid #9AA3AC;border-radius:6px;flex:none;margin-top:2px}
+.lbl{font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--mut);text-transform:uppercase}
+.back{font-size:22px;margin-right:8px}
+</style></head><body>
+
+<!-- SVG ícones da barra -->
+<svg width="0" height="0" style="position:absolute">
+ <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+ <symbol id="i-rota" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+ <symbol id="i-cli" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5M16 4.8a3.5 3.5 0 0 1 0 6.4M18.5 14.8c1.6.8 2.6 2.5 3 5.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+ <symbol id="i-ped" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 9h6M9 13h6M9 17h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+ <symbol id="i-perf" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+ <symbol id="i-mais" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+</svg>
+
+<!-- 1 INÍCIO -->
+<div class="tel" id="inicio">
+ <div class="panel"><div class="sb"><span>17:30</span><span>5G ▮▮▮ 54%</span></div>
+  <div class="in"><div class="dt">Quinta, 12 de novembro</div><div class="hi">Boa tarde, Lucas</div><div class="sub">Sem rota hoje</div></div></div>
+ <div class="ct">
+  <div class="sec"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="#C2540A" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="#C2540A" stroke-width="2"/><circle cx="12" cy="12" r="1.6" fill="#C2540A"/></svg>Meta do mês<span class="r">1%</span></div>
+  <div class="card meta">
+   <div class="big">R$ 2.154<small>de R$ 180.000</small></div>
+   <div class="bar"><i style="width:1.5%;min-width:10px"></i></div>
+   <div class="hoje">Meta de hoje <b>R$ 11.115</b></div>
+   <div class="cols"><div>Positivação<b>5 de 15</b></div><div>Visitas<b>1 de 90</b></div><div>Cobertura<b>17% de 90%</b></div></div>
+  </div>
+  <div class="btnrec"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l1.5 2h-15zM10 21h4" fill="none" stroke="#C2540A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg><b>Recados e tarefas</b><span class="badge">3 novos</span><span class="chev"></span></div>
+  <div class="sync">↻ Sincronizar</div>
+  <div class="synct">Última sincronização 17:22 · 0 na fila</div>
+ </div>
+ <div class="nav"><div class="on"><svg><use href="#i-home"/></svg>Início</div><div><svg><use href="#i-rota"/></svg>Rota</div><div><svg><use href="#i-cli"/></svg>Clientes</div><div><svg><use href="#i-ped"/></svg>Pedidos</div><div><svg><use href="#i-perf"/></svg>Performance</div><div><svg><use href="#i-mais"/></svg>Mais</div></div>
+</div>
+
+<!-- 2 RECADOS E TAREFAS -->
+<div class="tel" id="recados">
+ <div class="sb"><span>17:30</span><span>5G ▮▮▮ 54%</span></div>
+ <div class="hd"><div class="t"><span class="back">‹</span>Recados e tarefas</div></div>
+ <div class="ct" style="padding-top:4px">
+  <div class="seg"><div class="on">Todos</div><div>Recados</div><div>Tarefas</div></div>
+  <div class="card rec">
+   <div class="it"><div class="box"></div><div class="tx"><b>Pesquisa de preço no Atacadinho Cachoeirinha</b><p>Tarefa da supervisão · até sexta, 14/11</p></div><span class="q" style="color:var(--acc);font-weight:600">● hoje</span></div>
+   <div class="it"><div class="box"></div><div class="tx"><b>Foto da gôndola no Supermercado Rio Negro</b><p>Tarefa da supervisão · até hoje</p></div><span class="q" style="color:var(--acc);font-weight:600">● hoje</span></div>
+   <div class="it"><div class="ico" style="background:var(--okbg);color:var(--ok)">✓</div><div class="tx"><b>Pedido 000014 aprovado</b><p>Mercadinho São Jorge</p></div><span class="q" style="color:var(--acc);font-weight:600">● ontem</span></div>
+   <div class="it"><div class="ico" style="background:var(--accbg);color:var(--acc)">💬</div><div class="tx" style="font-weight:400"><span style="font-size:14.5px">Prioridade</span><p>Passe cedo no Mercadinho São Jorge: tem título vencido e o pedido de ontem…</p></div><span class="q">ontem</span></div>
+   <div class="it"><div class="box" style="background:var(--ok);border-color:var(--ok)"></div><div class="tx" style="opacity:.6"><span style="font-size:14.5px;text-decoration:line-through">Atualizar cadastro do Empório Tacutu</span><p>Feita ontem</p></div><span class="q">10/11</span></div>
+  </div>
+ </div>
+ <div class="nav"><div><svg><use href="#i-home"/></svg>Início</div><div><svg><use href="#i-rota"/></svg>Rota</div><div><svg><use href="#i-cli"/></svg>Clientes</div><div><svg><use href="#i-ped"/></svg>Pedidos</div><div><svg><use href="#i-perf"/></svg>Performance</div><div><svg><use href="#i-mais"/></svg>Mais</div></div>
+</div>
+
+<!-- 3 PEDIDOS -->
+<div class="tel" id="pedidos">
+ <div class="sb"><span>17:30</span><span>5G ▮▮▮ 54%</span></div>
+ <div class="hd"><div class="t">Pedidos</div><div class="s">Novembro</div></div>
+ <div class="ct" style="padding-top:0">
+  <div class="kpis">
+   <div class="card kpi"><div class="l">Orçamentos em aberto<span class="chev" style="margin-left:auto;width:7px;height:7px"></span></div><div class="v">1 <small>· R$ 110,00</small></div></div>
+   <div class="card kpi"><div class="l">Pedidos enviados<span class="chev" style="margin-left:auto;width:7px;height:7px"></span></div><div class="v">5 <small>· R$ 2.446,00</small></div></div>
+   <div class="card kpi tot"><div class="l">Total</div><div class="v">6 <small>· </small>R$ 2.556,00</div></div>
+  </div>
+  <div class="chips"><span class="chip on">Todos</span><span class="chip">A faturar</span><span class="chip">Em aprovação</span><span class="chip">Recusados</span><span class="chip">Faturados</span></div>
+  <div class="card lst">
+   <div class="it"><div class="n"><b>Mercadinho São Jorge</b><span>Nº 000014 · hoje</span></div><div class="r"><b>R$ 812,40</b><span class="tag t-ap">Em aprovação</span></div></div>
+   <div class="it"><div class="n"><b>Atacadinho Cachoeirinha</b><span>Nº 000013 · hoje</span></div><div class="r"><b>R$ 126,64</b><span class="tag t-af">A faturar</span></div></div>
+   <div class="it"><div class="n"><b>Supermercado Rio Negro</b><span>Nº 000012 · ontem</span></div><div class="r"><b>R$ 1.130,00</b><span class="tag t-af">A faturar</span></div></div>
+   <div class="it"><div class="n"><b>Empório Tacutu</b><span>Nº 000011 · 10/11</span></div><div class="r"><b>R$ 176,96</b><span class="tag t-af">A faturar</span></div></div>
+   <div class="it"><div class="n"><b>Mercearia Bom Preço</b><span>Nº 000010 · 10/11</span></div><div class="r"><b>R$ 200,00</b><span class="tag t-af">A faturar</span></div></div>
+   <div class="it"><div class="n"><b>Comercial Pacaraima</b><span>Nº 000009 · 07/11</span></div><div class="r"><b>R$ 455,10</b><span class="tag t-re">Recusado</span></div></div>
+  </div>
+ </div>
+ <div class="nav"><div><svg><use href="#i-home"/></svg>Início</div><div><svg><use href="#i-rota"/></svg>Rota</div><div><svg><use href="#i-cli"/></svg>Clientes</div><div class="on"><svg><use href="#i-ped"/></svg>Pedidos</div><div><svg><use href="#i-perf"/></svg>Performance</div><div><svg><use href="#i-mais"/></svg>Mais</div></div>
+</div>
+
+<!-- 4 PERFORMANCE -->
+<div class="tel" id="performance">
+ <div class="sb"><span>17:30</span><span>5G ▮▮▮ 54%</span></div>
+ <div class="hd"><div class="t">Performance</div><div class="s">Novembro · 8 dias úteis restantes</div></div>
+ <div class="ct" style="padding-top:0">
+  <div class="card meta">
+   <div class="lbl">Faturamento</div>
+   <div class="big" style="margin-top:6px">R$ 2.154<small>de R$ 180.000</small></div>
+   <div class="bar"><i style="width:1.5%;min-width:10px"></i></div>
+   <div class="hoje">Meta de hoje <b>R$ 11.115</b></div>
+  </div>
+  <div class="card perf">
+   <div class="row"><div class="k"><b>Positivação</b><span>5 de 15 clientes · 33%</span></div><div class="bar" style="margin:10px 0 0"><i style="width:33%"></i></div></div>
+   <div class="row"><div class="k"><b>Visitas</b><span>1 de 90 · 1%</span></div><div class="bar" style="margin:10px 0 0"><i style="width:1.5%;min-width:8px"></i></div></div>
+   <div class="row"><div class="k"><b>Cobertura</b><span>17% de 90%</span></div><div class="bar" style="margin:10px 0 0"><i style="width:19%"></i></div></div>
+   <div class="row"><div class="k"><b>Ticket médio</b><span>R$ 489,20</span></div></div>
+  </div>
+ </div>
+ <div class="nav"><div><svg><use href="#i-home"/></svg>Início</div><div><svg><use href="#i-rota"/></svg>Rota</div><div><svg><use href="#i-cli"/></svg>Clientes</div><div><svg><use href="#i-ped"/></svg>Pedidos</div><div class="on"><svg><use href="#i-perf"/></svg>Performance</div><div><svg><use href="#i-mais"/></svg>Mais</div></div>
+</div>
+
+</body></html>

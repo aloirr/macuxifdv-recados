@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Archivo;src:url(../pdf3/fonts/Archivo_800ExtraBold.ttf);font-weight:800}
+@font-face{font-family:Archivo;src:url(../pdf3/fonts/Archivo_700Bold.ttf);font-weight:700}
+@font-face{font-family:Plex;src:url(../pdf3/fonts/IBMPlexSans_400Regular.ttf);font-weight:400}
+@font-face{font-family:Plex;src:url(../pdf3/fonts/IBMPlexSans_500Medium.ttf);font-weight:500}
+@font-face{font-family:Plex;src:url(../pdf3/fonts/IBMPlexSans_600SemiBold.ttf);font-weight:600}
+:root{--bg:#F3F4F1;--ink:#16202A;--ink2:#4A5562;--mut:#5B6670;--line:#E2E5E0;--card:#fff;--acc:#C2540A;--acct:#8F3D06;--accbg:#FBEFE6;--ok:#1D6B4F;--okbg:#E3F1EA;--warn:#7A5A00;--warnbg:#FFF4D6;--err:#B42318;--errbg:#FDE8E6;--panel:#18212C}
+*{box-sizing:border-box}
+body{margin:0;background:#DADDD7;font-family:Plex,sans-serif;color:var(--ink);display:flex;gap:40px;padding:40px;align-items:flex-start}
+.tel{flex:none;width:412px;height:892px;background:var(--bg);border-radius:30px;overflow:hidden;position:relative;box-shadow:0 2px 10px rgba(0,0,0,.08);display:flex;flex-direction:column}
+.sb{display:flex;justify-content:space-between;padding:12px 24px 4px;font-size:13px;font-weight:600}
+.panel{background:var(--panel);color:#fff;border-radius:0 0 26px 26px;padding:0 0 22px}
+.panel .sb{color:#fff}
+.panel .in{padding:8px 22px 0}
+.dt{font-size:14px;color:#C9CED3}
+.hi{font-family:Archivo;font-weight:800;font-size:28px;margin-top:2px;letter-spacing:-.3px}
+.sub{font-size:14px;color:#C9CED3;margin-top:4px}
+.ct{padding:18px 20px 12px;display:flex;flex-direction:column;gap:12px;flex:1;overflow:hidden}
+.sec{display:flex;align-items:center;gap:10px;font-family:Archivo;font-weight:700;font-size:18px;margin-top:4px}
+.sec .r{margin-left:auto;font-family:Plex;font-weight:600;font-size:14px;color:var(--ink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px}
+.meta{padding:16px 18px}
+.big{font-family:Archivo;font-weight:800;font-size:30px;letter-spacing:-.4px}
+.big small{font-family:Plex;font-weight:400;font-size:15px;color:var(--ink2);letter-spacing:0;margin-left:6px}
+.bar{height:8px;border-radius:4px;background:#ECEEE9;margin:12px 0 10px;position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;border-radius:4px;background:var(--acc)}
+.hoje{font-size:14px;color:var(--ink2)}.hoje b{color:var(--ink);font-weight:600}
+.cols{display:flex;border-top:1px solid var(--line);margin-top:12px;padding-top:10px}
+.cols div{flex:1 1 auto;font-size:12.5px;color:var(--ink2)}
+.cols div+div{border-left:1px solid var(--line);padding-left:12px}
+.cols b{display:block;white-space:nowrap;font-family:Archivo;font-weight:800;font-size:16px;color:var(--ink);margin-top:2px}
+.btnrec{display:flex;align-items:center;gap:12px;padding:16px 18px;background:var(--accbg);border:1px solid #F3C9A8;border-radius:16px}
+.btnrec b{font-family:Archivo;font-weight:700;font-size:17px}
+.badge{margin-left:auto;background:var(--acc);color:#fff;font-weight:600;font-size:13.5px;border-radius:999px;padding:4px 11px}
+.chev{width:9px;height:9px;border-right:2px solid var(--ink);border-top:2px solid var(--ink);transform:rotate(45deg);margin-left:6px;flex:none}
+.sync{margin-top:auto;background:var(--ink);color:#fff;border-radius:16px;text-align:center;padding:15px;font-weight:600;font-size:16px}
+.synct{text-align:center;font-size:12.5px;color:var(--mut);margin-top:-2px}
+.nav{display:flex;justify-content:space-around;background:#fff;border-top:1px solid var(--line);padding:8px 0 12px;font-size:11px;color:#3A4550;font-weight:500}
+.nav div{display:flex;flex-direction:column;align-items:center;gap:3px;width:16%}
+.nav svg{width:22px;height:22px}
+.nav .on{color:var(--acc);font-weight:600}
+.hd{padding:6px 22px 10px}
+.hd .t{font-family:Archivo;font-weight:800;font-size:26px}
+.hd .s{font-size:13.5px;color:var(--mut);margin-top:2px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kpi{padding:12px 14px}
+.kpi .l{font-size:12.5px;font-weight:600;color:var(--ink2);display:flex;align-items:center}
+.kpi .v{font-family:Archivo;font-weight:800;font-size:20px;margin-top:4px}
+.kpi .v small{font-family:Plex;font-weight:500;font-size:14px;color:var(--ink2)}
+.tot{grid-column:1/3;display:flex;align-items:center;justify-content:space-between;background:var(--ink);color:#fff;border:0}
+.tot .l{color:#C9CED3}
+.tot .v small{color:#C9CED3}
+.chips{display:flex;gap:6px;flex-wrap:nowrap;overflow:hidden}
+.chip{border:1px solid #CDD2CC;background:#fff;border-radius:999px;padding:6px 11px;font-size:12.5px;font-weight:500;white-space:nowrap}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.lst .it{display:flex;align-items:center;gap:10px;padding:11px 14px;border-top:1px solid var(--line)}
+.lst .it:first-child{border-top:0}
+.lst .n{flex:1;min-width:0}
+.lst .n b{display:block;font-size:14.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lst .n span{font-size:12.5px;color:var(--mut)}
+.lst .r{text-align:right;flex:none}
+.lst .r b{display:block;font-size:14.5px;font-weight:600}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;border-radius:999px;padding:2px 9px;margin-top:3px}
+.t-af{background:#E6EEF7;color:#24456B}.t-ap{background:var(--warnbg);color:var(--warn)}.t-re{background:var(--errbg);color:var(--err)}.t-fa{background:var(--okbg);color:var(--ok)}
+.perf .row{padding:14px 16px}
+.perf .row+.row{border-top:1px solid var(--line)}
+.perf .k{display:flex;justify-content:space-between;font-size:14px}
+.perf .k b{font-weight:600}
+.perf .k span{color:var(--ink2)}
+.seg{display:flex;border:1px solid #CDD2CC;border-radius:12px;overflow:hidden;background:#fff}
+.seg div{flex:1;text-align:center;padding:9px;font-weight:600;font-size:14px}
+.seg .on{background:var(--ink);color:#fff}
+.rec .it{display:flex;gap:12px;padding:13px 16px;border-top:1px solid var(--line)}
+.rec .it:first-child{border-top:0}
+.ico{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;flex:none;font-size:17px}
+.rec .tx{flex:1;min-width:0}
+.rec .tx b{font-size:14.5px}
+.rec .tx p{margin:2px 0 0;font-size:13.5px;color:var(--ink2);line-height:1.35}
+.rec .q{font-size:12px;color:var(--mut);white-space:nowrap}
+.box{width:20px;height:20px;border:2px solid #9AA3AC;border-radius:6px;flex:none;margin-top:2px}
+.lbl{font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--mut);text-transform:uppercase}
+.back{font-size:22px;margin-right:8px}
+</style><style>
+.tel.alto{height:auto}
+.res{padding:14px 16px}
+.res .top{display:flex;align-items:center;justify-content:space-between}
+.res .nm{font-family:Archivo;font-weight:700;font-size:16px}
+.pct{font-weight:700;font-size:13px;border-radius:999px;padding:3px 10px}
+.p-ok{background:var(--okbg);color:var(--ok)}.p-at{background:var(--warnbg);color:var(--warn)}.p-ba{background:var(--errbg);color:var(--err)}
+.res .val{font-family:Archivo;font-weight:800;font-size:24px;margin-top:6px}
+.res .val small{font-family:Plex;font-weight:400;font-size:14px;color:var(--ink2);margin-left:5px}
+.res .bar{margin:10px 0 12px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid var(--line);padding-top:10px}
+.g3 div{font-size:12px;color:var(--ink2)}
+.g3 div+div{border-left:1px solid var(--line);padding-left:10px}
+.g3 b{display:block;font-size:15px;font-weight:600;color:var(--ink);margin-top:2px;white-space:nowrap}
+.du{display:flex;justify-content:space-between;font-size:13px;color:var(--ink2);padding:0 2px}
+.du b{color:var(--ink)}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pc{padding:12px 14px}
+.pc .l{font-size:12.5px;font-weight:600;color:var(--ink2)}
+.pc .v{font-family:Archivo;font-weight:800;font-size:21px;margin-top:4px;display:flex;align-items:center;gap:7px}
+.pc .v i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.pc .m{font-size:12px;color:var(--mut);margin-top:2px}
+.ok i{background:var(--ok)}.ko i{background:var(--acc)}
+.ko .v{color:var(--acct)}
+</style><style>
+.mg{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mc{padding:12px 13px}
+.mc .tp{display:flex;justify-content:space-between;align-items:center}
+.mc .nm{font-size:13px;font-weight:600;color:var(--ink2)}
+.mc .pct{font-size:11.5px;padding:2px 8px}
+.mc .vv{font-family:Archivo;font-weight:800;font-size:19px;margin-top:6px;white-space:nowrap}
+.mc .mt{font-size:12px;color:var(--mut)}
+.mc .bar{height:6px;margin:8px 0 8px}
+.mc .nd{font-size:12px;color:var(--ink2);display:flex;justify-content:space-between}
+.mc .nd b{color:var(--ink);font-weight:600}
+.pd{padding:12px 14px}
+.pd .tp{display:flex;align-items:center;gap:8px}
+.pd .tp b{font-family:Archivo;font-weight:700;font-size:16px}
+.pd .tp span{margin-left:auto;font-size:13px;color:var(--ink2)}
+.pd .g4{display:grid;grid-template-columns:repeat(4,1fr);margin-top:10px;border-top:1px solid var(--line);padding-top:9px}
+.pd .g4 div{font-size:11.5px;color:var(--ink2)}
+.pd .g4 div+div{border-left:1px solid var(--line);padding-left:8px}
+.pd .g4 b{display:flex;align-items:center;gap:5px;font-size:15px;font-weight:700;color:var(--ink);margin-top:2px;white-space:nowrap}
+.pd .g4 i{width:7px;height:7px;border-radius:50%;display:inline-block}
+.gi{background:var(--ok)}.oi{background:var(--acc)}
+.sect{display:flex;justify-content:space-between;align-items:baseline;margin-top:2px}
+.sect b{font-family:Archivo;font-weight:700;font-size:17px}
+.sect span{font-size:12.5px;color:var(--ink2)}
+</style><style>
+.tel.alto{height:auto}
+.res{padding:14px 16px}
+.res .top{display:flex;align-items:center;justify-content:space-between}
+.res .nm{font-family:Archivo;font-weight:700;font-size:16px}
+.pct{font-weight:700;font-size:13px;border-radius:999px;padding:3px 10px}
+.p-ok{background:var(--okbg);color:var(--ok)}.p-at{background:var(--warnbg);color:var(--warn)}.p-ba{background:var(--errbg);color:var(--err)}
+.res .val{font-family:Archivo;font-weight:800;font-size:24px;margin-top:6px}
+.res .val small{font-family:Plex;font-weight:400;font-size:14px;color:var(--ink2);margin-left:5px}
+.res .bar{margin:10px 0 12px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid var(--line);padding-top:10px}
+.g3 div{font-size:12px;color:var(--ink2)}
+.g3 div+div{border-left:1px solid var(--line);padding-left:10px}
+.g3 b{display:block;font-size:15px;font-weight:600;color:var(--ink);margin-top:2px;white-space:nowrap}
+.du{display:flex;justify-content:space-between;font-size:13px;color:var(--ink2);padding:0 2px}
+.du b{color:var(--ink)}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pc{padding:12px 14px}
+.pc .l{font-size:12.5px;font-weight:600;color:var(--ink2)}
+.pc .v{font-family:Archivo;font-weight:800;font-size:21px;margin-top:4px;display:flex;align-items:center;gap:7px}
+.pc .v i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.pc .m{font-size:12px;color:var(--mut);margin-top:2px}
+.ok i{background:var(--ok)}.ko i{background:var(--acc)}
+.ko .v{color:var(--acct)}
+</style><style>
+.av{width:46px;height:46px;border-radius:50%;flex:none;overflow:hidden;border:2px solid rgba(255,255,255,.35)}
+.hirow{display:flex;align-items:center;gap:12px;margin-top:4px}
+.frase{font-size:14.5px;color:#DDE1E5;margin-top:8px;font-style:italic;line-height:1.4}
+.fbtn{width:44px;height:44px;border:1px solid #CDD2CC;border-radius:12px;background:#fff;display:grid;place-items:center;flex:none}
+.hdrow{display:flex;align-items:center;justify-content:space-between}
+.etq{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--ink);border-radius:999px;padding:5px 11px;font-size:13px;font-weight:600;background:#fff}
+.sheet{position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:22px 22px 0 0;padding:10px 0 18px;box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+.dim{position:absolute;inset:0;background:rgba(22,32,42,.45)}
+.op{display:flex;justify-content:space-between;padding:14px 22px;font-size:16px;border-top:1px solid var(--line)}
+.board{width:900px;background:#fff;border-radius:24px;padding:28px}
+.board h2{font-family:Archivo;font-weight:800;font-size:24px;margin:0 0 4px}
+.board p{margin:0 0 20px;color:var(--ink2);font-size:14px}
+.avg{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.avc{text-align:center;font-size:13px;color:var(--ink2)}
+.avc svg,.avc .ini{width:120px;height:120px;border-radius:50%;display:block;margin:0 auto 8px}
+.ini{background:#1E3350;color:#fff;font-family:Archivo;font-weight:800;font-size:40px;display:grid!important;place-items:center}
+</style><style>
+.br{display:flex;align-items:center;gap:8px;margin:8px 0}
+.br .bar{flex:1;margin:0!important}
+.br em{font-style:normal;font-weight:700;font-size:13px;white-space:nowrap}
+.c-ba{color:var(--err)}.c-at{color:var(--warn)}.c-ok{color:#1E3350}
+.vv .sl,.val .sl{font-family:Plex;font-weight:500;color:var(--ink2)}
+</style><style>
+.g5{display:grid;grid-template-columns:1fr 1fr 1fr;row-gap:10px;padding:4px 0 2px}
+.g5 div{font-size:11.5px;color:var(--ink2);padding-left:10px;border-left:1px solid var(--line)}
+.g5 div:nth-child(3n+1){border-left:0;padding-left:0}
+.g5 b{display:flex;align-items:center;gap:5px;font-size:15px;font-weight:700;color:var(--ink);margin-top:2px;white-space:nowrap}
+.g5 i{width:7px;height:7px;border-radius:50%;display:inline-block}
+</style><body>
+
+<!-- SVG ícones da barra -->
+<svg width="0" height="0" style="position:absolute">
+ <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+ <symbol id="i-rota" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+ <symbol id="i-cli" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5M16 4.8a3.5 3.5 0 0 1 0 6.4M18.5 14.8c1.6.8 2.6 2.5 3 5.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+ <symbol id="i-ped" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 9h6M9 13h6M9 17h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+ <symbol id="i-perf" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+ <symbol id="i-mais" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+</svg>
+
+<div class="tel alto" id="inicio4">
+ <div class="panel" style="padding-bottom:16px"><div class="sb"><span>20:30</span><span>5G ▮▮▮ 54%</span></div>
+  <div class="in" style="display:flex;gap:14px;align-items:stretch">
+   <div style="flex:1;min-width:0"><div class="dt">Quinta, 12 de novembro · DU 9 de 20</div>
+    <div class="hi" style="margin-top:4px">Boa noite, Lucas</div>
+    <div class="frase" style="margin-top:10px">“Cada visita bem feita abre a porta para a próxima venda.”</div></div>
+   <div style="width:104px;flex:none;border-radius:18px;overflow:hidden;border:2px solid rgba(255,255,255,.3);align-self:stretch;background:#DCE6F2;position:relative"><svg style="position:absolute;inset:0;width:100%;height:100%" preserveAspectRatio="xMidYMid slice" data-id="m1" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="120" fill="#DCE6F2"/>
+<path d="M18 120c3-24 21-36 42-36s39 12 42 36z" fill="#1E3350"/><rect x="51" y="70" width="18" height="18" rx="6" fill="#C68A62"/>
+<ellipse cx="60" cy="54" rx="21" ry="24" fill="#C68A62"/><path d="M38 52c0-16 10-24 22-24s22 8 22 24c-3-7-9-11-22-11s-19 4-22 11z" fill="#2B1D14"/><path d="M40 58c1 14 9 23 20 23s19-9 20-23c-4 6-10 9-20 9s-16-3-20-9z" fill="#2B1D14"/>
+<circle cx="52" cy="56" r="2.3" fill="#1B1B1B"/><circle cx="68" cy="56" r="2.3" fill="#1B1B1B"/><path d="M54 67q6 4 12 0" stroke="#5A3A2A" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
+  </div></div>
+ <div class="ct" style="overflow:visible">
+  <div class="sect" style="align-items:center"><b>Metas do mês</b><span style="margin-left:auto"><span style="position:relative;display:inline-grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#fff;border:1px solid var(--line)"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l1.5 2h-15zM10 21h4" fill="none" stroke="#16202A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg><span style="position:absolute;top:-7px;right:-7px;background:#C2540A;color:#fff;font-family:Plex;font-size:11.5px;font-weight:700;border-radius:999px;min-width:20px;height:20px;padding:0 5px;display:grid;place-items:center">3</span></span></span></div>
+  <div class="mg"><div class="card mc"><div class="tp"><span class="nm">Faturamento</span></div><div class="vv">R$ 84,6 k<span class="sl"> / 180 k</span></div><div class="br"><div class="bar"><i style="width:47%"></i></div><em class="c-ba">47%</em></div><div class="nd"><span>Meta/dia</span><b>R$ 8,7 k</b></div></div><div class="card mc"><div class="tp"><span class="nm">Positivação</span></div><div class="vv">38<span class="sl"> / 70</span></div><div class="br"><div class="bar"><i style="width:54.3%"></i></div><em class="c-ba">54%</em></div><div class="nd"><span>Meta/dia</span><b>3</b></div></div><div class="card mc"><div class="tp"><span class="nm">Visitas</span></div><div class="vv">96<span class="sl"> / 220</span></div><div class="br"><div class="bar"><i style="width:43.6%"></i></div><em class="c-ba">44%</em></div><div class="nd"><span>Meta/dia</span><b>12</b></div></div><div class="card mc"><div class="tp"><span class="nm">Itens por pedido</span></div><div class="vv">6,4<span class="sl"> / 8,0</span></div><div class="br"><div class="bar"><i style="width:80%"></i></div><em class="c-ba">80%</em></div><div class="nd"><span>Meta/pedido</span><b>9,3</b></div></div></div>
+  
+  <div class="sect" style="margin-top:6px;align-items:center"><b>Produtividade</b><span class="chev" style="width:8px;height:8px;margin-right:6px"></span></div>
+  <div class="card pd"><div class="g5"><div>Jornada líquida<b><i class="oi"></i>7h40</b></div><div>1º check-in<b><i class="gi"></i>07:52</b></div><div>Almoço<b><i class="oi"></i>1h34</b></div><div>Último check-in<b><i class="gi"></i>17:06</b></div><div>Fora de rota<b><i class="oi"></i>14%</b></div><div>TMA<b><i class="gi"></i>27 min</b></div></div></div>
+  <div style="display:flex;align-items:center;gap:10px;margin-top:6px"><div class="sync" style="margin:0;flex:1">↻ Sincronizar</div><div style="font-size:11.5px;color:var(--mut);line-height:1.3;white-space:nowrap">Últ. sincronização<br>20:22</div></div>
+ </div>
+ <div class="nav"><div class="on"><svg><use href="#i-home"/></svg>Início</div><div><svg><use href="#i-rota"/></svg>Rota</div><div><svg><use href="#i-cli"/></svg>Clientes</div><div><svg><use href="#i-ped"/></svg>Pedidos</div><div><svg><use href="#i-perf"/></svg>Performance</div><div><svg><use href="#i-mais"/></svg>Mais</div></div></div><div class="tel alto" id="inicio5">
+ <div class="panel" style="padding-bottom:16px"><div class="sb"><span>20:30</span><span>5G ▮▮▮ 54%</span></div>
+  <div class="in" style="display:flex;gap:14px;align-items:stretch">
+   <div style="flex:1;min-width:0"><div class="dt">Quinta, 12 de novembro · DU 9 de 20</div>
+    <div class="hi" style="margin-top:4px">Boa noite, Lucas</div>
+    <div class="frase" style="margin-top:10px">“Cada visita bem feita abre a porta para a próxima venda.”</div></div>
+   <div style="width:104px;flex:none;border-radius:18px;overflow:hidden;border:2px solid rgba(255,255,255,.3);align-self:stretch;background:#DCE6F2;position:relative"><svg style="position:absolute;inset:0;width:100%;height:100%" preserveAspectRatio="xMidYMid slice" data-id="m1" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="120" fill="#DCE6F2"/>
+<path d="M18 120c3-24 21-36 42-36s39 12 42 36z" fill="#1E3350"/><rect x="51" y="70" width="18" height="18" rx="6" fill="#C68A62"/>
+<ellipse cx="60" cy="54" rx="21" ry="24" fill="#C68A62"/><path d="M38 52c0-16 10-24 22-24s22 8 22 24c-3-7-9-11-22-11s-19 4-22 11z" fill="#2B1D14"/><path d="M40 58c1 14 9 23 20 23s19-9 20-23c-4 6-10 9-20 9s-16-3-20-9z" fill="#2B1D14"/>
+<circle cx="52" cy="56" r="2.3" fill="#1B1B1B"/><circle cx="68" cy="56" r="2.3" fill="#1B1B1B"/><path d="M54 67q6 4 12 0" stroke="#5A3A2A" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
+  </div></div>
+ <div class="ct" style="overflow:visible">
+  <div class="sect" style="align-items:center"><b>Metas do mês</b><span style="margin-left:auto"><span style="position:relative;display:inline-grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#fff;border:1px solid var(--line)"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l1.5 2h-15zM10 21h4" fill="none" stroke="#16202A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg><span style="position:absolute;top:-7px;right:-7px;background:#C2540A;color:#fff;font-family:Plex;font-size:11.5px;font-weight:700;border-radius:999px;min-width:20px;height:20px;padding:0 5px;display:grid;place-items:center">3</span></span></span></div>
+  <div class="mg"><div class="card mc"><div class="tp"><span class="nm">Faturamento</span></div><div class="vv">R$ 84,6 k<span class="sl"> / 180 k</span></div><div class="br"><div class="bar"><i style="width:47%"></i></div><em class="c-ba">47%</em></div><div class="nd"><span>Meta/dia</span><b>R$ 8,7 k</b></div></div><div class="card mc"><div class="tp"><span class="nm">Positivação</span></div><div class="vv">38<span class="sl"> / 70</span></div><div class="br"><div class="bar"><i style="width:54.3%"></i></div><em class="c-ba">54%</em></div><div class="nd"><span>Meta/dia</span><b>3</b></div></div><div class="card mc"><div class="tp"><span class="nm">Visitas</span></div><div class="vv">96<span class="sl"> / 220</span></div><div class="br"><div class="bar"><i style="width:43.6%"></i></div><em class="c-ba">44%</em></div><div class="nd"><span>Meta/dia</span><b>12</b></div></div><div class="card mc"><div class="tp"><span class="nm">Itens por pedido</span></div><div class="vv">6,4<span class="sl"> / 8,0</span></div><div class="br"><div class="bar"><i style="width:80%"></i></div><em class="c-ba">80%</em></div><div class="nd"><span>Meta/pedido</span><b>9,3</b></div></div></div>
+  
+  <div class="sect" style="margin-top:6px;align-items:center"><b>Produtividade</b><span class="chev" style="width:8px;height:8px;margin-right:6px"></span></div>
+  <div class="card pd"><div class="g5"><div>Jornada líquida<b><i class="oi"></i>7h40</b></div><div>1º check-in<b><i class="gi"></i>07:52</b></div><div>Almoço<b><i class="oi"></i>1h34</b></div><div>Último check-in<b><i class="gi"></i>17:06</b></div><div>Fora de rota<b><i class="oi"></i>14%</b></div><div>TMA<b><i class="gi"></i>27 min</b></div></div></div>
+  <div style="display:flex;align-items:center;gap:10px;margin-top:6px"><div class="sync" style="margin:0;flex:1">↻ Sincronizar</div><div style="font-size:11.5px;color:var(--mut);line-height:1.3;white-space:nowrap">Últ. sincronização<br>20:22</div></div>
+ </div>
+ <div style="position:absolute;inset:0;background:rgba(22,32,42,.25)"></div>
+<div style="position:absolute;right:16px;top:234px;width:330px;background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden">
+ <div style="position:absolute;top:-7px;right:22px;width:14px;height:14px;background:#fff;transform:rotate(45deg)"></div>
+ <div style="padding:12px 16px 6px;font-family:Archivo;font-weight:700;font-size:15px">Recados e tarefas</div>
+ <div class="rec">
+  <div class="it" style="padding:10px 16px"><div class="box" style="margin-top:1px"></div><div class="tx"><b style="font-size:13.5px">Pesquisa de preço no Atacadinho…</b><p style="font-size:12.5px">Tarefa · até sexta, 14/11</p></div></div>
+  <div class="it" style="padding:10px 16px"><div class="box" style="margin-top:1px"></div><div class="tx"><b style="font-size:13.5px">Foto da gôndola no Supermercado…</b><p style="font-size:12.5px">Tarefa · até hoje</p></div></div>
+  <div class="it" style="padding:10px 16px"><div class="ico" style="width:22px;height:22px;font-size:12px;background:var(--okbg);color:var(--ok)">✓</div><div class="tx"><b style="font-size:13.5px">Pedido 000014 aprovado</b><p style="font-size:12.5px">Mercadinho São Jorge · ontem</p></div></div>
+  <div class="it" style="padding:10px 16px"><div class="ico" style="width:22px;height:22px;font-size:12px;background:var(--accbg);color:var(--acc)">💬</div><div class="tx"><span style="font-size:13.5px">Prioridade</span><p style="font-size:12.5px">Passe cedo no Mercadinho São Jorge…</p></div></div>
+ </div>
+ <div style="border-top:1px solid var(--line);padding:11px 16px;text-align:center;font-weight:600;font-size:14px;color:#8F3D06">Ver todos</div>
+</div><div class="nav"><div class="on"><svg><use href="#i-home"/></svg>Início</div><div><svg><use href="#i-rota"/></svg>Rota</div><div><svg><use href="#i-cli"/></svg>Clientes</div><div><svg><use href="#i-ped"/></svg>Pedidos</div><div><svg><use href="#i-perf"/></svg>Performance</div><div><svg><use href="#i-mais"/></svg>Mais</div></div></div><div class="tel alto" id="perf4"><div class="sb"><span>20:30</span><span>5G ▮▮▮ 54%</span></div>
+<div class="hd hdrow"><div class="t">Performance</div><div class="fbtn"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8z" fill="none" stroke="#16202A" stroke-width="2" stroke-linejoin="round"/></svg></div></div>
+<div class="ct" style="padding-top:0;overflow:visible">
+<div class="seg"><div class="on">Resultados</div><div>Produtividade</div></div>
+<div class="du"><span>Novembro</span><span>DU <b>9 de 20</b> · 11 restantes</span></div>
+<div class="card res"><div class="top"><span class="nm">Faturamento</span></div><div class="val">R$ 84,6 k<span class="sl" style="font-size:20px"> / 180 k</span></div><div class="br" style="margin:10px 0 12px"><div class="bar"><i style="width:47%"></i></div><em class="c-ba" style="font-size:14px">47,0%</em></div><div class="g3"><div>Gap<b>R$ 95,4 k</b></div><div>Meta/dia<b>R$ 8,7 k</b></div><div>Real/dia<b>R$ 9,4 k</b></div></div></div><div class="card res"><div class="top"><span class="nm">Positivação</span></div><div class="val">38<span class="sl" style="font-size:20px"> / 70</span></div><div class="br" style="margin:10px 0 12px"><div class="bar"><i style="width:54.3%"></i></div><em class="c-ba" style="font-size:14px">54,3%</em></div><div class="g3"><div>Gap<b>32</b></div><div>Meta/dia<b>3</b></div><div>Real/dia<b>4</b></div></div></div><div class="card res"><div class="top"><span class="nm">Visitas</span></div><div class="val">96<span class="sl" style="font-size:20px"> / 220</span></div><div class="br" style="margin:10px 0 12px"><div class="bar"><i style="width:43.6%"></i></div><em class="c-ba" style="font-size:14px">43,6%</em></div><div class="g3"><div>Gap<b>124</b></div><div>Meta/dia<b>12</b></div><div>Real/dia<b>11</b></div></div></div><div class="card res"><div class="top"><span class="nm">Itens por pedido</span></div><div class="val">6,4<span class="sl" style="font-size:20px"> / 8,0</span></div><div class="br" style="margin:10px 0 12px"><div class="bar"><i style="width:80%"></i></div><em class="c-ba" style="font-size:14px">80,0%</em></div><div class="g3"><div>Gap<b>1,6</b></div><div>Meta/pedido<b>9,3</b></div><div>Real<b>6,4</b></div></div></div></div><div class="nav"><div><svg><use href="#i-home"/></svg>Início</div><div><svg><use href="#i-rota"/></svg>Rota</div><div><svg><use href="#i-cli"/></svg>Clientes</div><div><svg><use href="#i-ped"/></svg>Pedidos</div><div class="on"><svg><use href="#i-perf"/></svg>Performance</div><div><svg><use href="#i-mais"/></svg>Mais</div></div></div><div class="tel alto" id="prod4"><div class="sb"><span>20:30</span><span>5G ▮▮▮ 54%</span></div>
+<div class="hd hdrow"><div class="t">Performance</div><div class="fbtn"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8z" fill="none" stroke="#16202A" stroke-width="2" stroke-linejoin="round"/></svg></div></div>
+<div class="ct" style="padding-top:0;overflow:visible">
+<div class="seg"><div>Resultados</div><div class="on">Produtividade</div></div>
+<div class="du"><span>Novembro</span><span>DU <b>9 de 20</b> · 11 restantes</span></div>
+<div class="pg"><div class="card pc ok"><div class="l">1º check-in (média)</div><div class="v"><i></i>07:52</div><div class="m">meta até 08:00</div></div><div class="card pc ok"><div class="l">Último check-in (média)</div><div class="v"><i></i>17:06</div><div class="m">meta depois de 17:00</div></div><div class="card pc ok"><div class="l">TMA · atendimento</div><div class="v"><i></i>27 min</div><div class="m">meta até 30 min</div></div><div class="card pc ko"><div class="l">TMD · deslocamento</div><div class="v"><i></i>31 min</div><div class="m">meta até 25 min</div></div><div class="card pc ko"><div class="l">Almoço (média)</div><div class="v"><i></i>1h34</div><div class="m">meta até 1h30</div></div><div class="card pc ko"><div class="l">Fora de rota</div><div class="v"><i></i>14%</div><div class="m">meta até 10%</div></div><div class="card pc ko"><div class="l">Visitas por dia</div><div class="v"><i></i>10,7</div><div class="m">meta 11</div></div><div class="card pc ko"><div class="l">Cobertura de rota</div><div class="v"><i></i>78%</div><div class="m">meta 90%</div></div><div class="card pc ok"><div class="l">Raio médio do check-in</div><div class="v"><i></i>58 m</div><div class="m">meta até 100 m</div></div><div class="card pc ok"><div class="l">Km por dia</div><div class="v"><i></i>88 km</div><div class="m">meta até 120 km</div></div><div class="card pc ok"><div class="l">Km por cliente</div><div class="v"><i></i>8,2 km</div><div class="m">meta até 12 km</div></div></div></div><div class="nav"><div><svg><use href="#i-home"/></svg>Início</div><div><svg><use href="#i-rota"/></svg>Rota</div><div><svg><use href="#i-cli"/></svg>Clientes</div><div><svg><use href="#i-ped"/></svg>Pedidos</div><div class="on"><svg><use href="#i-perf"/></svg>Performance</div><div><svg><use href="#i-mais"/></svg>Mais</div></div></div><div class="tel" id="folha4"><div class="sb"><span>20:30</span><span>5G ▮▮▮ 54%</span></div>
+<div class="hd hdrow"><div class="t">Performance</div><div class="fbtn"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8z" fill="none" stroke="#16202A" stroke-width="2" stroke-linejoin="round"/></svg></div></div>
+<div class="dim"></div><div class="sheet"><div style="width:40px;height:4px;background:#CDD2CC;border-radius:2px;margin:0 auto 12px"></div>
+<div style="font-family:Archivo;font-weight:800;font-size:19px;padding:0 22px 12px">Período</div>
+<div class="op"><span>Hoje</span></div><div class="op"><span>Ontem</span></div><div class="op"><span>Esta semana</span></div><div class="op"><b>Este mês</b><b>✓</b></div><div class="op"><span>Mês passado</span></div><div class="op"><span>Este ano</span></div>
+<div class="op" style="color:#8F3D06;font-weight:700">Escolher dia, mês ou ano ›</div>
+<div style="margin:12px 22px 0;border:1.5px solid #16202A;border-radius:12px;text-align:center;padding:12px;font-weight:600">Limpar</div></div></div><div class="board" id="avatares"><h2>Avatares do perfil</h2><p>Sem foto cadastrada, o app mostra as iniciais. O vendedor escolhe um avatar ou envia a foto no Perfil.</p>
+<div class="avg"><div class="avc"><div class="ini">LA</div>Iniciais (padrão)</div><div class="avc"><svg id="m1" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="120" fill="#DCE6F2"/>
+<path d="M18 120c3-24 21-36 42-36s39 12 42 36z" fill="#1E3350"/><rect x="51" y="70" width="18" height="18" rx="6" fill="#C68A62"/>
+<ellipse cx="60" cy="54" rx="21" ry="24" fill="#C68A62"/><path d="M38 52c0-16 10-24 22-24s22 8 22 24c-3-7-9-11-22-11s-19 4-22 11z" fill="#2B1D14"/><path d="M40 58c1 14 9 23 20 23s19-9 20-23c-4 6-10 9-20 9s-16-3-20-9z" fill="#2B1D14"/>
+<circle cx="52" cy="56" r="2.3" fill="#1B1B1B"/><circle cx="68" cy="56" r="2.3" fill="#1B1B1B"/><path d="M54 67q6 4 12 0" stroke="#5A3A2A" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Masculino 1</div><div class="avc"><svg id="m2" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="120" fill="#F3E3D3"/>
+<path d="M18 120c3-24 21-36 42-36s39 12 42 36z" fill="#2F6B3B"/><rect x="51" y="70" width="18" height="18" rx="6" fill="#7A4B2E"/>
+<ellipse cx="60" cy="54" rx="21" ry="24" fill="#7A4B2E"/><path d="M37 50c-2-15 9-26 23-26s25 11 23 26c-4-5-12-8-23-8s-19 3-23 8z" fill="#141010"/><g fill="#141010"><circle cx="42" cy="38" r="6"/><circle cx="52" cy="31" r="6"/><circle cx="63" cy="29" r="6"/><circle cx="74" cy="33" r="6"/><circle cx="80" cy="42" r="5"/></g>
+<circle cx="52" cy="56" r="2.3" fill="#1B1B1B"/><circle cx="68" cy="56" r="2.3" fill="#1B1B1B"/><path d="M54 67q6 4 12 0" stroke="#5A3A2A" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Masculino 2</div><div class="avc"><svg id="m3" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="120" fill="#E6E9EE"/>
+<path d="M18 120c3-24 21-36 42-36s39 12 42 36z" fill="#5B6673"/><rect x="51" y="70" width="18" height="18" rx="6" fill="#F0C9A8"/>
+<ellipse cx="60" cy="54" rx="21" ry="24" fill="#F0C9A8"/><path d="M38 50c0-15 9-24 23-24 12 0 21 8 21 22-8-9-20-12-31-9-6 2-10 6-13 11z" fill="#8A5A2B"/><g fill="none" stroke="#1F2937" stroke-width="2"><circle cx="52" cy="56" r="6.5"/><circle cx="68" cy="56" r="6.5"/><path d="M58.5 56h3"/></g>
+<circle cx="52" cy="56" r="2.3" fill="#1B1B1B"/><circle cx="68" cy="56" r="2.3" fill="#1B1B1B"/><path d="M54 67q6 4 12 0" stroke="#5A3A2A" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Masculino 3</div>
+<div class="avc" style="display:grid;place-items:center"><div style="width:120px;height:120px;border-radius:50%;border:2px dashed #9AA3AC;display:grid;place-items:center;font-size:13px;color:#5B6670;margin:0 auto 8px">📷 Enviar foto</div>Foto</div><div class="avc"><svg id="f1" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="120" fill="#F6E0D6"/>
+<path d="M18 120c3-24 21-36 42-36s39 12 42 36z" fill="#C2540A"/><rect x="51" y="70" width="18" height="18" rx="6" fill="#D9A27C"/>
+<path d="M34 54c0-20 11-30 26-30s26 10 26 30v36H34z" fill="#2B1D14"/><ellipse cx="60" cy="54" rx="21" ry="24" fill="#D9A27C"/><path d="M38 50c2-14 11-21 22-21s20 7 22 21c-6-8-14-11-22-11s-16 3-22 11z" fill="#2B1D14"/>
+<circle cx="52" cy="56" r="2.3" fill="#1B1B1B"/><circle cx="68" cy="56" r="2.3" fill="#1B1B1B"/><path d="M54 67q6 4 12 0" stroke="#5A3A2A" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Feminino 1</div><div class="avc"><svg id="f2" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="120" fill="#E3F1EA"/>
+<path d="M18 120c3-24 21-36 42-36s39 12 42 36z" fill="#24456B"/><rect x="51" y="70" width="18" height="18" rx="6" fill="#6B3F25"/>
+<g fill="#121010"><circle cx="60" cy="44" r="30"/><circle cx="36" cy="58" r="13"/><circle cx="84" cy="58" r="13"/></g><ellipse cx="60" cy="54" rx="21" ry="24" fill="#6B3F25"/>
+<circle cx="52" cy="56" r="2.3" fill="#1B1B1B"/><circle cx="68" cy="56" r="2.3" fill="#1B1B1B"/><path d="M54 67q6 4 12 0" stroke="#5A3A2A" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Feminino 2</div><div class="avc"><svg id="f3" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="120" fill="#EDE7F5"/>
+<path d="M18 120c3-24 21-36 42-36s39 12 42 36z" fill="#1D6B4F"/><rect x="51" y="70" width="18" height="18" rx="6" fill="#F2CDB0"/>
+<path d="M36 50c0-17 11-26 24-26s24 9 24 26v22c-4 2-8 2-10 0V54H46v18c-2 2-6 2-10 0z" fill="#C9A05C"/><ellipse cx="60" cy="54" rx="21" ry="24" fill="#F2CDB0"/><path d="M38 52c1-13 10-21 22-21s21 8 22 21c-7-6-14-9-22-9s-15 3-22 9z" fill="#C9A05C"/><g fill="none" stroke="#1F2937" stroke-width="2"><circle cx="52" cy="56" r="6.5"/><circle cx="68" cy="56" r="6.5"/><path d="M58.5 56h3"/></g>
+<circle cx="52" cy="56" r="2.3" fill="#1B1B1B"/><circle cx="68" cy="56" r="2.3" fill="#1B1B1B"/><path d="M54 67q6 4 12 0" stroke="#5A3A2A" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Feminino 3</div></div></div></body></html>
