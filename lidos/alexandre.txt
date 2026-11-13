@@ -652,3 +652,5 @@ R-20261113-055159-engenheiro-software
 R-20261113-055303-modulo-integracao
 R-20261113-060441-gerente-projetos
 R-20261113-080735-gerente-projetos
+R-20261113-083443-gerente-projetos
+R-20261113-083639-gerente-projetos
