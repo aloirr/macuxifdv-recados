@@ -641,3 +641,5 @@ R-20261113-023911-engenheiro-apps
 R-20261113-025203-engenheiro-software
 R-20261113-025711-testes
 R-20261113-034045-testes
+R-20261113-042612-gerente-projetos
+R-20261113-042713-modulo-integracao
