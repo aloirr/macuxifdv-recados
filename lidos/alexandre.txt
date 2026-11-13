@@ -601,3 +601,4 @@ R-20261112-173252-gerente-projetos
 R-20261112-181910-modulo-vendedor
 R-20261112-183723-gerente-projetos
 R-20261112-190258-banco-dados
+R-20261112-194723-designer-ux
