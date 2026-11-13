@@ -627,3 +627,8 @@ R-20261112-220741-modulo-vendedor
 R-20261112-222347-corretor-redundancias
 R-20261112-222531-corretor-redundancias
 R-20261112-224604-modulo-core
+R-20261112-231014-corretor-redundancias
+R-20261112-231621-corretor-redundancias
+R-20261112-231709-corretor-redundancias
+R-20261112-232916-gerente-projetos
+R-20261112-232919-corretor-redundancias
