@@ -668,3 +668,4 @@ R-20261113-113642-engenheiro-software
 R-20261113-114656-gerente-projetos
 R-20261113-115245-modulo-core
 R-20261113-120610-modulo-vendedor
+R-20261113-130024-modulo-integracao
