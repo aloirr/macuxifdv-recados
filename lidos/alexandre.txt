@@ -655,3 +655,10 @@ R-20261113-080735-gerente-projetos
 R-20261113-083443-gerente-projetos
 R-20261113-083639-gerente-projetos
 R-20261113-101646-gerente-projetos
+R-20261113-104206-corretor-redundancias
+R-20261113-104231-corretor-redundancias
+R-20261113-104256-corretor-redundancias
+R-20261113-104319-corretor-redundancias
+R-20261113-104539-corretor-redundancias
+R-20261113-104608-corretor-redundancias
+R-20261113-104633-corretor-redundancias
