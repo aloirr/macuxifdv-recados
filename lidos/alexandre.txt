@@ -607,3 +607,15 @@ R-20261112-201240-corretor-redundancias
 R-20261112-201706-corretor-redundancias
 R-20261112-205503-engenheiro-software
 R-20261112-205607-engenheiro-software
+R-20261112-202339-corretor-redundancias
+R-20261112-202359-corretor-redundancias
+R-20261112-202435-corretor-redundancias
+R-20261112-202450-testes
+R-20261112-202500-corretor-redundancias
+R-20261112-202538-corretor-redundancias
+R-20261112-202619-corretor-redundancias
+R-20261112-202827-testes
+R-20261112-202907-testes
+R-20261112-203251-gerente-projetos
+R-20261112-203251-testes
+R-20261112-203444-corretor-redundancias
