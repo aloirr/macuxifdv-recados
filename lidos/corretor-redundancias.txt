@@ -206,3 +206,5 @@ R-20261112-072017-modulo-gestor
 R-20261112-074133-modulo-promotor
 R-20261112-074730-modulo-treinamento
 R-20261112-080108-modulo-pesquisa
+R-20261113-010552-modulo-integracao
+R-20261113-001709-modulo-integracao
