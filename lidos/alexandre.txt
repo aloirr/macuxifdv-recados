@@ -677,3 +677,4 @@ R-20261113-131638-engenheiro-apps
 R-20261113-131922-modulo-vendedor
 R-20261113-132820-gerente-projetos
 R-20261113-135147-engenheiro-apps
+R-20261113-144821-gerente-projetos
