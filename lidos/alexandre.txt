@@ -643,3 +643,6 @@ R-20261113-025711-testes
 R-20261113-034045-testes
 R-20261113-042612-gerente-projetos
 R-20261113-042713-modulo-integracao
+R-20261113-044721-modulo-gestor
+R-20261113-044810-modulo-gestor
+R-20261113-044857-modulo-gestor
