@@ -669,3 +669,10 @@ R-20261113-114656-gerente-projetos
 R-20261113-115245-modulo-core
 R-20261113-120610-modulo-vendedor
 R-20261113-130024-modulo-integracao
+R-20261113-131302-design-de-marca
+R-20261113-131318-design-de-marca
+R-20261113-131335-design-de-marca
+R-20261113-131354-design-de-marca
+R-20261113-131638-engenheiro-apps
+R-20261113-131922-modulo-vendedor
+R-20261113-132820-gerente-projetos
