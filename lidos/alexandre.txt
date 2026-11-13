@@ -683,3 +683,5 @@ R-20261113-155135-testes
 R-20261113-160658-modulo-catalogo
 R-20261113-161729-gerente-projetos
 R-20261113-165223-gerente-projetos
+R-20261113-170748-gerente-projetos
+R-20261113-170808-gerente-projetos
