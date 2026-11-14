@@ -691,3 +691,10 @@ R-20261113-174515-gerente-projetos
 R-20261113-183558-modulo-core
 R-20261113-191528-gerente-projetos
 R-20261113-200320-gerente-projetos
+R-20261113-202702-gerente-projetos
+R-20261113-202509-design-de-marca
+R-20261113-202456-design-de-marca
+R-20261113-202446-gerente-projetos
+R-20261113-202329-design-de-marca
+R-20261113-202207-corretor-redundancias
+R-20261113-202156-corretor-redundancias
