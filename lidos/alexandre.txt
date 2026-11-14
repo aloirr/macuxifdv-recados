@@ -709,3 +709,6 @@ R-20261114-005136-gerente-projetos
 R-20261114-022524-corretor-redundancias
 R-20261114-023339-gerente-projetos
 R-20261114-042619-gerente-projetos
+R-20261114-061446-gerente-projetos
+R-20261114-070137-gerente-projetos
+R-20261114-070956-gerente-projetos
