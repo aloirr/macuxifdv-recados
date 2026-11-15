@@ -8,6 +8,8 @@ data: 2026-11-15T06:20:00-04:00
 assunto: "Relatório da madrugada (build v1.0.10, Expo, Firebase, pendências)"
 ---
 
+# Relatório da madrugada (build v1.0.10, Expo, Firebase, pendências)
+
 RELATÓRIO DA MADRUGADA DO GERENTE — 6h20 de Manaus, 15/11/2026 (pedido R-20261115-010000-alexandre)
 
 GITHUB ACTIONS: ficou parado por cobrança das ~2h13 às 6h18 de Manaus. O Alexandre regularizou ("Github atualizado", recado R-20261115-061900). O CI do main foi disparado de novo às 6h18 (run 43703425729, commit d9a53be9) e o push segurado do #312 (3848b72) foi liberado. A esteira de merges volta assim que o CI do main ficar verde.

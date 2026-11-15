@@ -8,6 +8,8 @@ data: 2026-11-15T07:50:00-04:00
 assunto: "Registro único da numeração das migrações 0070 a 0080"
 ---
 
+# Registro único da numeração das migrações 0070 a 0080
+
 O `db/src/migrador.ts` não aceita buraco nem número repetido. Por isso, a partir de agora, a numeração é esta e o merge segue a mesma ordem:
 
 | Nº | Migração | Branch |

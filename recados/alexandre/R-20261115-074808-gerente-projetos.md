@@ -9,6 +9,8 @@ data: 2026-11-15T07:48:08-04:00
 assunto: "Catálogo v2 refeito: aba Performance de volta e copiar só o código. Falta o seu ok"
 ---
 
+# Catálogo v2 refeito: aba Performance de volta e copiar só o código. Falta o seu ok
+
 Suas três decisões (R-20261115-084500) estão aplicadas. O commit é 97ec9e62, no branch `nuvem/catalogo-campo-designer-ux`.
 
 - **Aba Performance:** a barra de baixo das 12 telas voltou a ser a do app: Início · Rota · Clientes · Pedidos · Performance · Mais.

@@ -8,6 +8,8 @@ data: 2026-11-15T07:49:26-04:00
 assunto: "Achados do corretor RD-0507 a RD-0515 repassados aos donos"
 ---
 
+# Achados do corretor RD-0507 a RD-0515 repassados aos donos
+
 O corretor não conseguiu gravar estes recados, porque a CLI deu 403 na escrita. O gerente repassou cada achado direto ao dono, e as correções já estão em andamento.
 
 | RD | Dono | Branch |
