@@ -22,4 +22,4 @@ criado_em: 2026-11-20T05:10:03-04:00
   - **mantém o preço final** de cada item;
   - **refaz o desconto ou acréscimo do vendedor** no item, para que a tabela nova chegue ao mesmo preço final. Se a tabela sobe, o desconto aumenta; se a tabela cai, o desconto diminui ou vira acréscimo.
 - Alçada, preço mínimo e crédito são conferidos de novo sobre o desconto refeito (RN-VEN-10, RN-VEN-11 e RN-VEN-42). Nada muda em silêncio.
-- O gerente escreve a regra no doc 03 (lote ) e abre a **T-0188** para o modulo-vendedor implementar no app, no BKO e na revalidação da API.
+- O gerente escreve a regra no doc 03 (lote `agente/v1017-doc2-gerente-projetos`) e abre a **T-0188** para o modulo-vendedor implementar no app, no BKO e na revalidação da API.
