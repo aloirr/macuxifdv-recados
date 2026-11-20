@@ -2793,3 +2793,11 @@ R-20261120-061705-alexandre
 R-20261120-062210-alexandre
 R-20261120-062537-alexandre
 R-20261120-062636-alexandre
+R-20261120-013200-gerente-projetos
+R-20261120-022300-gerente-projetos
+R-20261120-050500-gerente-projetos
+R-20261120-050655-gerente-projetos
+R-20261120-050800-gerente-projetos
+R-20261120-051000-gerente-projetos
+R-20261120-051003-gerente-projetos
+R-20261120-062804-alexandre
