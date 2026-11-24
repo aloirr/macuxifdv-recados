@@ -48,7 +48,7 @@ ESTADO NA PASSAGEM (24/11/2026, tarde de Manaus)
 
 AGORA (faça tudo sozinho, sem pedir nada ao Alexandre)
 1. Faça a leitura completa acima.
-2. Crie a sessão do novo gerente com create_session: environment_id env_013h15BCBtijeuaDyNopoMrE, source_url https://github.com/aloirr/macuxifdv, model opus, effort high, permission_mode auto, title "MacuxiFDV - Gerente de Projeto", tags ["conta-nova","dono:gerente-projetos"], append_system_prompt "Você é o gerente-projetos fixo do Macuxi FDV.", prompt = o conteúdo INTEIRO de recados/anexos/prompts/gerente-projetos-fdv.md deste repositório. Anote o id.
+2. O Alexandre abre o novo gerente em outra sessão, com o prompt próprio dele (recados/anexos/prompts/gerente-projetos-fdv.md). Ache-o com list_sessions: a sessão mais nova do gerente do Macuxi FDV, diferente de session_019xHEXs75xqGq9m52u565UD. Mande a ele por send_message: "Agente PO novo do FDV: <seu id>". Se ainda não existir, confira de novo a cada 10 min com send_later até achar.
 3. Espere o "gerente novo pronto" dele. Confira o resumo contra os recados. Se houver divergência, corrija com ele.
 4. Passe o lembrete de 30/11: crie um novo com send_later (at 2026-11-30T09:13:00[America/Manaus], mesmo texto) nesta sessão e apague o trig_01881LKwZkv5VEHiDUaCMj8B.
 5. Grave um recado aviso para [todos] com os ids do novo Agente PO e do novo gerente, e avise o gerente do ERP (session_019xHEXorMcUM7hAvrbsGwJd) por send_message.
